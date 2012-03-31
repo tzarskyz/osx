@@ -1,0 +1,55 @@
+= Overview
+
+This project contains a set of shell scripts for configuring and setting up the OSX environment. These scripts are especially handy
+when setting up the operating system for the first time.
+
+= Features
+
+* A shell script for configuring default settings.
+* A shell script for configuring Homebrew[http://mxcl.github.com/homebrew].
+
+= Requirements
+
+* OSX[http://www.apple.com/osx]
+
+= Setup
+
+Open a terminal window and execute one of the following setup sequences depending on your version preference:
+
+Current Version (stable):
+
+  git clone git://github.com/bkuhlmann/osx.git
+  cd osx
+  git checkout v0.1.0
+
+Master Version (unstable):
+
+  git clone git://github.com/bkuhlmann/osx.git
+  cd osx
+
+Edit any of the *.sh files in the scripts folder to your liking and then run setup.sh to execute them all.
+
+= Usage
+
+Open a terminal window and execute the following command:
+
+  ./setup.sh
+
+Feel free to delete this osx project directory after completing installation. 
+
+= Contributions
+
+Please log all feedback/issues via {GitHub Issues}[https://github.com/bkuhlmann/osx/issues]. Thanks.
+
+= Credits
+
+Developed by {Brooke Kuhlmann}[http://www.redalchemist.com] at {Red Alchemist}[http://www.redalchemist.com]
+
+= License
+
+Copyright (c) 2012 {Red Alchemist}[http://www.redalchemist.com].
+Read the LICENSE for details.
+
+= History
+
+Read the CHANGELOG for details.

@@ -15,4 +15,4 @@ brew install git
 # Ruby
 brew install rbenv
 brew install ruby-build
-rbenv install 1.9.3-p125
+rbenv install 1.9.3-p194

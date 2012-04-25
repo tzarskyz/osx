@@ -35,7 +35,11 @@ Open a terminal window and execute the following command:
 
   ./setup.sh
 
-Feel free to delete this osx project directory after completing installation. 
+Feel free to delete this osx project directory after completing installation.
+
+= Resources
+
+* {Mathias Bynens' OSX Defaults}[https://github.com/mathiasbynens/dotfiles/blob/master/.osx]
 
 = Contributions
 

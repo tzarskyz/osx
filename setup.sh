@@ -7,6 +7,6 @@ echo "\nSetting OSX defaults...\n"
 scripts/defaults.sh
 
 echo "\nInstalling Homebrew...\n"
-#scripts/homebrew.sh
+scripts/homebrew.sh
 
 echo "\nOSX setup complete!\n"

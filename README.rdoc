@@ -33,7 +33,7 @@ Edit any of the *.sh files in the scripts folder to your liking and then run set
 
 Open a terminal window and execute the following command:
 
-  ./setup.sh
+  ./run.sh
 
 Feel free to delete this osx project directory after completing installation.
 

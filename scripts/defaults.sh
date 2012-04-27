@@ -1,9 +1,12 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-# Description: Configures useful defaults for OSX.
-# Reference: https://gist.github.com/2260182
-# Usage: ./defaults.sh
+# DESCRIPTION
+# Configures useful defaults for OSX.
 
+# USAGE
+# ./defaults.sh
+
+# EXECUTION
 echo "Show all filename extensions in Finder"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
@@ -75,9 +78,6 @@ chflags nohidden ~/Library
 echo "Remove the auto-hiding Dock delay"
 defaults write com.apple.Dock autohide-delay -float 0
 
-echo "Remove the animation when hiding/showing the Dock"
-defaults write com.apple.dock autohide-time-modifier -float 0
-
 echo "Automatically hide and show the Dock"
 defaults write com.apple.dock autohide -bool true
 
@@ -95,10 +95,10 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 echo "Disable the Ping sidebar in iTunes"
 defaults write com.apple.iTunes disablePingSidebar -bool true
 
-echo "Disable all the other Ping stuff in iTunes"
+echo "Disable all the Ping related features in iTunes"
 defaults write com.apple.iTunes disablePing -bool true
 
-echo "Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app"
+echo "Copy email addresses as 'foo@example.com' instead of 'Foo Bar <foo@example.com>'' in Mail.app"
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 echo "Prevent Time Machine from prompting to use new hard drives as backup volume"

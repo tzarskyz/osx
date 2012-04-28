@@ -79,9 +79,6 @@ brew update
 # Bash
 brew install bash
 
-# Growl
-brew install growlnotify
-
 # Git
 brew install git
 

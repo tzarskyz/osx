@@ -7,8 +7,6 @@
 # ./software.sh
 
 # SETTINGS
-export OSX_GCC_URL=https://github.com/downloads/kennethreitz/osx-gcc-installer
-export OSX_GCC_PKG=GCC-10.7-v2.pkg
 export RUBY_VERSION=1.9.3-p194
 export POSTGRESQL_VERSION=9.1.3
 export REDIS_VERSION=2.4.11
@@ -68,10 +66,6 @@ export SKYPE_URL=http://download.skype.com/macosx
 export SKYPE_FILE=Skype_5.7.59.1037.dmg
 
 # EXECUTION
-# GCC
-download_installer $OSX_GCC_URL $OSX_GCC_PKG
-install_pkg $WORK_PATH
-
 # Homebrew
 /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 brew update

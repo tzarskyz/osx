@@ -11,6 +11,9 @@ when setting up the operating system for the first time.
 = Requirements
 
 * OSX[http://www.apple.com/osx]
+* {OSX Software Updates}[http://www.apple.com/osx]
+* Xcode[https://developer.apple.com/downloads]
+* {Command Line Tools for Xcode}[https://developer.apple.com/downloads]
 
 = Setup
 

@@ -70,9 +70,6 @@ export SKYPE_FILE=Skype_5.7.59.1037.dmg
 /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 brew update
 
-# Bash
-brew install bash
-
 # Git
 brew install git
 

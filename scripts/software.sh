@@ -21,7 +21,7 @@ export ITERM_FILE=iTerm2_v1_0_0.zip
 export SUBLIME_TEXT_URL=http://c758482.r82.cf2.rackcdn.com
 export SUBLIME_TEXT_FILE=Sublime%20Text%202%20Build%202181.dmg
 export ALFRED_URL=http://rwc.cachefly.net
-export ALFRED_FILE=alfred_1.1_189.dmg
+export ALFRED_FILE=alfred_1.2_220.dmg
 export PATH_FINDER_URL=http://get.cocoatech.com
 export PATH_FINDER_FILE=PathFinderSL6.dmg
 export FIREFOX_URL=http://mozilla.c3sl.ufpr.br/releases//firefox/releases/12.0/mac/en-US
@@ -97,13 +97,14 @@ cd dotfiles
 ruby install.rb
 cd $HOME
 rm -rf dotfiles
+exec $SHELL
 
 # Ruby Gems
 git clone git://github.com/bkuhlmann/ruby_gem_setup.git
 cd ruby_gem_setup
 ruby setup.rb
 cd $HOME
-rmo -rf ruby_gem_setup
+rm -rf ruby_gem_setup
 
 # Pow
 curl get.pow.cx | sh

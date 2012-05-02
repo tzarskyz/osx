@@ -54,7 +54,6 @@ export -f install_pkg
 # $1 = URL
 # $2 = download file name
 # $3 = mount path
-# $4 = package file name
 function install_dmg_pkg {
 	download_installer $1 $2
 	download_file="$WORK_PATH/$2"
@@ -66,7 +65,7 @@ function install_dmg_pkg {
 
 	echo "Cleaning..."
 	hdiutil detach -force "$3"
-	# rm -f $download_file
+	rm -f $download_file
 }
 export -f install_dmg_pkg
 

@@ -61,7 +61,7 @@ function install_dmg_pkg {
 	download_file="$WORK_PATH/$2"
 
 	echo "Mounting..."
-	hdiutil attach $download_file
+	hdiutil attach "$download_file"
 
 	install_pkg "$mount_point"
 
@@ -83,7 +83,7 @@ function install_dmg_app {
 	download_file="$WORK_PATH/$2"
 
 	echo "Mounting..."
-	hdiutil attach $download_file
+	hdiutil attach "$download_file"
 
 	install_app "$mount_point"
 
@@ -118,7 +118,7 @@ function install_tar_app {
 
 	echo "Preparing..."
 	cd $WORK_PATH
-	tar $3 "$2"
+	tar "$3" "$2"
 
 	install_app $temp_path
 }

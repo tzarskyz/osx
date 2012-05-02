@@ -155,9 +155,6 @@ install_dmg_app $OMNIDAZZLE_URL $OMNIDAZZLE_FILE "OmniDazzle"
 # ExpanDrive
 install_zip_app $EXPANDRIVE_URL $EXPANDRIVE_FILE
 
-# ExpanDrive
-install_zip_app $EXPANDRIVE_URL $EXPANDRIVE_FILE
-
 # iStat Menus (the app is the installer)
 download_only $ISTATS_URL $ISTATS_FILE
 

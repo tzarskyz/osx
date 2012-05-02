@@ -55,16 +55,18 @@ export -f install_pkg
 # $2 = download file name
 # $3 = mount path
 function install_dmg_pkg {
+	mount_point="/Volumes/$3"
+
 	download_installer $1 $2
 	download_file="$WORK_PATH/$2"
 
 	echo "Mounting..."
 	hdiutil attach $download_file
 
-	install_pkg "$3"
+	install_pkg "$mount_point"
 
 	echo "Cleaning..."
-	hdiutil detach -force "$3"
+	hdiutil detach -force "$mount_point"
 	rm -f $download_file
 }
 export -f install_dmg_pkg
@@ -83,10 +85,10 @@ function install_dmg_app {
 	echo "Mounting..."
 	hdiutil attach $download_file
 
-	install_app $mount_point
+	install_app "$mount_point"
 
 	echo "Cleaning..."
-	hdiutil detach -force $mount_point
+	hdiutil detach -force "$mount_point"
 	rm -f $download_file
 }
 export -f install_dmg_app

@@ -120,6 +120,6 @@ function install_tar_app {
 	cd $WORK_PATH
 	tar "$3" "$2"
 
-	install_app $temp_path
+	install_app $WORK_PATH
 }
 export -f install_tar_app

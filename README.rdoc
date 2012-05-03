@@ -5,7 +5,18 @@ This project contains shell scripts for setting up a new OSX environment.
 = Features
 
 * Configures default OSX settings.
-* Installs Homebrew[http://mxcl.github.com/homebrew] and related formulas for development.
+* Installs Homebrew[http://mxcl.github.com/homebrew] with the following formulas:
+  * Git[http://git-scm.com]
+  * Hub[https://github.com/defunkt/hub]
+  * Node[http://nodejs.org]
+  * ImageMagick[http://www.imagemagick.org]
+  * Graphviz[http://www.graphviz.org]
+  * Ruby[http://www.ruby-lang.org]
+  * Dotfiles[https://github.com/bkuhlmann/dotfiles]
+  * {Ruby Gems}[https://github.com/bkuhlmann/ruby_gem_setup]
+  * Pow[http://pow.cx]
+  * PostgreSQL[http://www.postgresql.org]
+  * Redis[http://redis.io]
 * Downloads and installs software packages generally not in the {App Store}[http://www.apple.com/macosx/whats-new/app-store.html]:
   * Dropbox[https://www.dropbox.com]
   * Knox[https://agilebits.com/knox]
@@ -16,33 +27,33 @@ This project contains shell scripts for setting up a new OSX environment.
   * Firefox[http://www.mozilla.com/en-US/firefox]
   * {Google Chrome}[http://www.google.com/chrome]
   * Opera[http://www.opera.com] 
-  *x OmniFocus[http://www.omnigroup.com/applications/omnifocus]
-  *x OmniOutliner[http://www.omnigroup.com/applications/omnioutliner]
-  *x OmniGraffle[http://www.omnigroup.com/applications/omnigraffle]
+  * OmniFocus[http://www.omnigroup.com/applications/omnifocus]
+  * OmniOutliner[http://www.omnigroup.com/applications/omnioutliner]
+  * OmniGraffle[http://www.omnigroup.com/applications/omnigraffle]
   * OmniDazzle[http://www.omnigroup.com/products/omnidazzle]
   * ExpanDrive[http://www.expandrive.com]
   * {iStat Menus}[http://bjango.com/apps/istatmenus]
-  *x {Air Display}[http://avatron.com/apps/air-display]
+  * {Air Display}[http://avatron.com/apps/air-display]
   * {Pastebot Sync}[http://tapbots.com/software/pastebot/#sync]
   * GitHub[http://mac.github.com]
   * Snippets[http://www.snippetsapp.com]
   * Espresso[http://macrabbit.com/espresso]
   * CodeKit[http://incident57.com/codekit]
-  *x Acorn[http://flyingmeat.com/acorn]
+  * Acorn[http://flyingmeat.com/acorn]
   * DoubleTake[http://echoone.com/doubletake]
   * ImageOptim[http://imageoptim.pornel.net]
   * ImageAlpha[http://pornel.net/imagealpha]
   * VLC[http://www.videolan.org/vlc]
   * pgAdmin[http://www.pgadmin.org/index.php]
-  *x {VMWare Fusion}[http://www.vmware.com/products/fusion]
-  *x Billings[http://www.billingsapp.com]
+  * Billings[http://www.billingsapp.com]
   * MoneyWell[http://nothirst.com/moneywell]
   * {Delicious Library}[http://www.delicious-monster.com]
   * OpenOffice[http://www.openoffice.org]
   * {Logitech Control Center}[http://www.logitech.com/en-us/584/3129]
   * {Logitech Harmony Remote}[http://www.logitech.com/en-us/440/3742?section=downloads]
-  *x Colloquy[http://colloquy.info]
+  * Colloquy[http://colloquy.info]
   * Skype[http://www.skype.com]
+  * VirtualBox[https://www.virtualbox.org]
 
 = Requirements
 
@@ -93,7 +104,7 @@ The following is a checklist of additional steps worth completing after the scri
 
 = App Store Software
 
-I also recommend installing the following software found via the App Store:
+I also recommend installing the following software found via the {App Store}[http://www.apple.com/macosx/whats-new/app-store.html]:
 
 * 1Password[http://agilewebsolutions.com/products/1Password]
 * TextExpander[http://www.smilesoftware.com/TextExpander]
@@ -112,6 +123,7 @@ I also recommend installing the following software found via the App Store:
 * GarageBand[http://www.apple.com/ilife/garageband]
 * iMovie[http://www.apple.com/ilife/imovie]
 * iPhoto[http://www.apple.com/ilife/iphoto]
+* {VMWare Fusion}[http://www.vmware.com/products/fusion] (requires a registered account, download only)
 
 = Resources
 

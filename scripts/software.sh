@@ -17,7 +17,7 @@ export DROPBOX_FILE=Dropbox%201.2.52.dmg
 export KNOX_URL=https://d13itkw33a7sus.cloudfront.net/dist/K
 export KNOX_FILE=Knox-2.1.15.zip
 export ITERM_URL=http://iterm2.googlecode.com/files
-export ITERM_FILE=iTerm2_v1_0_0.zip
+export ITERM_FILE=iTerm2-1_0_0_20120203.zip
 export SUBLIME_TEXT_URL=http://c758482.r82.cf2.rackcdn.com
 export SUBLIME_TEXT_FILE=Sublime%20Text%202%20Build%202181.dmg
 export ALFRED_URL=http://rwc.cachefly.net
@@ -129,7 +129,7 @@ install_dmg_app $DROPBOX_URL $DROPBOX_FILE "Dropbox Installer"
 install_zip_app $KNOX_URL $KNOX_FILE
 
 # iTerm
-install_zip_app $ITERM_URL $ITEM_FILE
+install_zip_app $ITERM_URL $ITERM_FILE
 
 # Sublime Text 2
 install_dmg_app $SUBLIME_TEXT_URL $SUBLIME_TEXT_FILE "Sublime Text 2"
@@ -177,10 +177,10 @@ install_zip_app $CODEKIT_URL $CODEKIT_FILE
 install_dmg_app $DOUBLETAKE_URL $DOUBLETAKE_FILE "DoubleTake"
 
 # ImageOptim
-install_tar_app $IMAGE_OPTIM_URL $IMAGE_OPTIM_FILE "-xjvf"
+install_tar_app $IMAGE_OPTIM_URL $IMAGE_OPTIM_FILE "-xjf"
 
 # ImageAlpha
-install_tar_app $IMAGE_ALPHA_URL $IMAGE_ALPHA_FILE "-xjvf"
+install_tar_app $IMAGE_ALPHA_URL $IMAGE_ALPHA_FILE "-xjf"
 
 # VLC
 install_dmg_app $VLC_URL $VLC_FILE "vlc-2.0.1"

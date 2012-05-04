@@ -77,7 +77,7 @@ Master Version (unstable):
   git clone git://github.com/bkuhlmann/osx.git
   cd osx
 
-Edit any of the *.sh files in the scripts folder to your liking and then run setup.sh to execute them all.
+Edit any of the *.sh files in the scripts folder to your liking.
 
 = Usage
 

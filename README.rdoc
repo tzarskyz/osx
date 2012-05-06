@@ -18,6 +18,7 @@ This project contains shell scripts for setting up a new OSX environment.
   * PostgreSQL[http://www.postgresql.org]
   * Redis[http://redis.io]
 * Downloads and installs software packages generally not in the {App Store}[http://www.apple.com/macosx/whats-new/app-store.html]:
+  * Caffeine[http://lightheadsw.com/caffeine]
   * Dropbox[https://www.dropbox.com]
   * Knox[https://agilebits.com/knox]
   * iTerm2[http://www.iterm2.com]
@@ -108,7 +109,6 @@ I also recommend installing the following software found via the {App Store}[htt
 
 * 1Password[http://agilewebsolutions.com/products/1Password]
 * TextExpander[http://www.smilesoftware.com/TextExpander]
-* Caffeine[http://lightheadsw.com/caffeine]
 * Fantastical[http://flexibits.com/fantastical]
 * ColorSnapper[http://colorsnapper.com]
 * xScope[http://iconfactory.com/software/xscope]

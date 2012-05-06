@@ -10,8 +10,6 @@
 export RUBY_VERSION=1.9.3-p194
 export POSTGRESQL_VERSION=9.1.3
 export REDIS_VERSION=2.4.11
-export VIRTUAL_BOX_URL=http://download.virtualbox.org/virtualbox/4.1.12
-export VIRTUAL_BOX_FILE=VirtualBox-4.1.12-77245-OSX.dmg
 export DROPBOX_URL=https://ddr3luum8vl5r.cloudfront.net
 export DROPBOX_FILE=Dropbox%201.2.52.dmg
 export KNOX_URL=https://d13itkw33a7sus.cloudfront.net/dist/K
@@ -78,6 +76,8 @@ export COLLOQUY_URL=http://colloquy.info/downloads
 export COLLOQUY_FILE=colloquy-latest.zip
 export SKYPE_URL=http://download.skype.com/macosx
 export SKYPE_FILE=Skype_5.7.59.1037.dmg
+export VIRTUAL_BOX_URL=http://download.virtualbox.org/virtualbox/4.1.12
+export VIRTUAL_BOX_FILE=VirtualBox-4.1.12-77245-OSX.dmg
 
 # EXECUTION
 # Homebrew

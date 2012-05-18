@@ -43,7 +43,7 @@ export EXPANDRIVE_FILE=ExpanDrive.zip
 export ISTATS_URL=http://s3.amazonaws.com/bjango/files/istatmenus3
 export ISTATS_FILE=istatmenus3.21.zip
 export AIR_DISPLAY_URL=http://avatron.com/downloads
-export AIR_DISPLAY_FILE=Air%20Display%20Installer.dmg
+export AIR_DISPLAY_FILE=AirDisplayInstaller.dmg
 export PASTEBOT_SYNC_URL=http://tapbots.net/pastebot
 export PASTEBOT_SYNC_FILE=PastebotSync.dmg
 export GITHUB_URL=https://github-central.s3.amazonaws.com
@@ -77,9 +77,11 @@ export OPEN_OFFICE_FILE=OOo_3.3.0_MacOS_x86_install_en-US.dmg
 export COLLOQUY_URL=http://colloquy.info/downloads
 export COLLOQUY_FILE=colloquy-latest.zip
 export SKYPE_URL=http://download.skype.com/macosx
-export SKYPE_FILE=Skype_5.7.59.1037.dmg
+export SKYPE_FILE=Skype_5.7.0.1130.dmg
 export VIRTUAL_BOX_URL=http://download.virtualbox.org/virtualbox/4.1.12
 export VIRTUAL_BOX_FILE=VirtualBox-4.1.12-77245-OSX.dmg
+export DOXIE_URL=http://www.getdoxie.com/resources/files
+export DOXIE_FILE=Doxie.dmg
 
 # EXECUTION
 # Homebrew
@@ -239,3 +241,6 @@ install_dmg_app $SKYPE_URL $SKYPE_FILE "Skype"
 
 # VirtualBox
 install_dmg_pkg $VIRTUAL_BOX_URL $VIRTUAL_BOX_FILE "VirtualBox"
+
+# Doxie
+install_dmg_pkg $DOXIE_URL $DOXIE_FILE "Doxie"

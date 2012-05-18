@@ -50,11 +50,10 @@ This project contains shell scripts for setting up a new OSX environment.
   * MoneyWell[http://nothirst.com/moneywell]
   * {Delicious Library}[http://www.delicious-monster.com]
   * OpenOffice[http://www.openoffice.org]
-  * {Logitech Control Center}[http://www.logitech.com/en-us/584/3129]
-  * {Logitech Harmony Remote}[http://www.logitech.com/en-us/440/3742?section=downloads]
   * Colloquy[http://colloquy.info]
   * Skype[http://www.skype.com]
   * VirtualBox[https://www.virtualbox.org]
+  * Doxie[http://www.getdoxie.com]
 
 = Requirements
 
@@ -123,7 +122,14 @@ I also recommend installing the following software found via the {App Store}[htt
 * GarageBand[http://www.apple.com/ilife/garageband]
 * iMovie[http://www.apple.com/ilife/imovie]
 * iPhoto[http://www.apple.com/ilife/iphoto]
+
+= Miscellaneous Software
+
+The following software is optional:
+
 * {VMWare Fusion}[http://www.vmware.com/products/fusion] (requires a registered account, download only)
+* {Logitech Control Center}[http://www.logitech.com/en-us/584/3129]
+* {Logitech Harmony Remote}[http://www.logitech.com/en-us/440/3742?section=downloads]
 
 = Resources
 

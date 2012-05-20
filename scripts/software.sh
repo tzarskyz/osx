@@ -152,6 +152,7 @@ install_zip_app $ITERM_URL $ITERM_FILE
 
 # Sublime Text 2
 install_dmg_app $SUBLIME_TEXT_URL $SUBLIME_TEXT_FILE "Sublime Text 2"
+sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/bin/sublime
 
 # Alfred
 install_dmg_app $ALFRED_URL $ALFRED_FILE "Alfred.app"

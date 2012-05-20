@@ -134,8 +134,8 @@ launchctl load -w ~/Library/LaunchAgents/org.postgresql.postgres.plist
 
 # Redis
 brew install redis
-cp /usr/local/Cellar/redis/$REDIS_VERSION/io.redis.redis-server.plist ~/Library/LaunchAgents/
-launchctl load -w ~/Library/LaunchAgents/io.redis.redis-server.plist
+cp /usr/local/Cellar/redis/$REDIS_VERSION/homebrew.mxcl.redis.plist ~/Library/LaunchAgents/
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 
 # Caffeine
 install_zip_app $CAFFEINE_URL $CAFFEINE_FILE

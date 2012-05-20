@@ -115,7 +115,7 @@ cd dotfiles
 ruby install.rb
 cd $HOME
 rm -rf dotfiles
-exec $SHELL
+source ~/.bashrc
 
 # Ruby Gems
 git clone git://github.com/bkuhlmann/ruby_gem_setup.git

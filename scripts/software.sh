@@ -9,7 +9,7 @@
 # SETTINGS
 export RUBY_VERSION=1.9.3-p194
 export POSTGRESQL_VERSION=9.1.3
-export REDIS_VERSION=2.4.11
+export REDIS_VERSION=2.4.13
 export CAFFEINE_URL=http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine
 export CAFFEINE_FILE=Caffeine1.1.1.zip
 export DROPBOX_URL=https://ddr3luum8vl5r.cloudfront.net

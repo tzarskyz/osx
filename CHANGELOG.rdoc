@@ -1,3 +1,32 @@
+= v0.2.0
+
+* Fixed PostgreSQL install steps.
+* Fixed Redis install steps.
+* Fixed the Air Display download.
+* Fixed README typo and extra forward slash in VLC URL.
+* Fixed iTerm file type and switched to iTerm beta download.
+* Fixed work path for install_tar_app function.
+* Fixed mount points and quoted them to account for paths with spaces.
+* Fixed mention of run.sh in README.
+* Upgraded to Ruby 1.9.3-p194.
+* Added rbenv rehash after default Ruby global setup.
+* Switched to sourcing the ~/.bashrc script after the dotfiles project install.
+* Added Sublime Text 2 setup for the CLI.
+* Updated the Redis version.
+* Added the Doxie installer.
+* Added the Caffeine install since it appears to no longer be provided via the App Store.
+* Added Homebrew formulas to README.
+* Added the list of apps and post-install steps to the README.
+* Removed tar install verbosity.
+* Removed duplicate ExpanDrive install.
+* Added no finder reveal option to hdiutil attach.
+* Removed the brew bash installer.
+* Removed the GCC installer and added requirements for Xcode and Xcode command line tools.
+* Removed Growl Notify formula since it no longer exists.
+* Added bash functions for downloading and installing packages.
+* Added install instructions for software that isn't in the App Store to the README.
+* Added more OSX defaults and credited Mathias Bynens for his work in the README.
+
 = v0.1.0
 
 * Initial version.

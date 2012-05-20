@@ -85,22 +85,7 @@ Open a terminal window and execute the following command:
 
   ./run.sh
 
-Feel free to delete this osx project directory after completing installation.
-
-The following is a checklist of additional steps worth completing after the scripts have been executed:
-
-* Reboot the machine.
-* Enable FileVault (via System Preferences - Security and Privacy).
-* Configure Wi-Fi.
-* Configure printer.
-* Configure scanner.
-* Configure Apple Mail and email accounts.
-* Configure Address Book.
-* Configure iCal.
-* Configure iTunes.
-* Install the Network Link Conditioner preference pane (found via /Developer/Applications/Utilities/Network Link Conditioner/)
-* Install {Firefox Extensions}[http://www.aeonscope.net/software/applications/firefox].
-* Configure previously installed applications.
+Reboot the machine after the script has completed. Feel free to delete the osx project directory as well.
 
 = App Store Software
 
@@ -127,9 +112,25 @@ I also recommend installing the following software found via the {App Store}[htt
 
 The following software is optional:
 
+* {Hardware IO Tools for Xcode}[https://developer.apple.com/downloads] - Includes the Network Link Conditioner amongst other goodies.
 * {VMWare Fusion}[http://www.vmware.com/products/fusion] (requires a registered account, download only)
 * {Logitech Control Center}[http://www.logitech.com/en-us/584/3129]
 * {Logitech Harmony Remote}[http://www.logitech.com/en-us/440/3742?section=downloads]
+
+= Post Install Checklist
+
+The following is a checklist of additional steps worth completing after the scripts have been executed:
+
+* Enable FileVault (via System Preferences - Security and Privacy).
+* Configure Wi-Fi.
+* Configure printer.
+* Configure scanner.
+* Configure Apple Mail and email accounts.
+* Configure Address Book.
+* Configure iCal.
+* Configure iTunes.
+* Install {Firefox Extensions}[http://www.aeonscope.net/software/applications/firefox].
+* Configure previously installed applications.
 
 = Resources
 

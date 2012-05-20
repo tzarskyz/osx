@@ -129,8 +129,9 @@ curl get.pow.cx | sh
 
 # PostgreSQL
 brew install postgresql
-cp /usr/local/Cellar/postgresql/$POSTGRESQL_VERSION/org.postgresql.postgres.plist ~/Library/LaunchAgents/
-launchctl load -w ~/Library/LaunchAgents/org.postgresql.postgres.plist
+initdb /usr/local/var/postgres
+cp /usr/local/Cellar/postgresql/$POSTGRESQL_VERSION/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Redis
 brew install redis

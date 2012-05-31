@@ -68,6 +68,8 @@ export VLC_URL=http://superb-dca2.dl.sourceforge.net/project/vlc/2.0.1/macosx
 export VLC_FILE=vlc-2.0.1.dmg
 export PG_ADMIN_URL=http://ftp.postgresql.org/pub/pgadmin3/release/v1.14.2/osx
 export PG_ADMIN_FILE=pgadmin3-1.14.2.dmg
+export NAMEBENCH_URL=http://namebench.googlecode.com/files/namebench-1.3.1-Mac_OS_X.dmg
+export NAMEBENCH_FILE=namebench-1.3.1-Mac_OS_X.dmg
 export BILLINGS_URL=http://download.marketcircle.com/billings
 export BILLINGS_FILE=Billings372.zip
 export MONEYWELL_URL=http://downloads.nothirst.com
@@ -228,6 +230,9 @@ install_dmg_app $VLC_URL $VLC_FILE "vlc-2.0.1"
 
 # PG Admin
 install_dmg_app $PG_ADMIN_URL $PG_ADMIN_FILE "pgAdmin3"
+
+# Namebench
+install_dmg_app $NAMEBENCH_URL $NAMEBENCH_FILE "namebench"
 
 # Billings
 install_zip_app $BILLINGS_URL $BILLINGS_FILE

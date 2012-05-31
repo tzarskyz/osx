@@ -94,6 +94,7 @@ I also recommend installing the following software found via the {App Store}[htt
 * 1Password[http://agilewebsolutions.com/products/1Password]
 * TextExpander[http://www.smilesoftware.com/TextExpander]
 * Fantastical[http://flexibits.com/fantastical]
+* Cobook[http://www.cobookapp.com]
 * ColorSnapper[http://colorsnapper.com]
 * xScope[http://iconfactory.com/software/xscope]
 * 3Hub[http://3hubapp.com]

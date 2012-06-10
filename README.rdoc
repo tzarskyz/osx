@@ -95,6 +95,7 @@ I also recommend installing the following software found via the {App Store}[htt
 * TextExpander[http://www.smilesoftware.com/TextExpander]
 * Fantastical[http://flexibits.com/fantastical]
 * Cobook[http://www.cobookapp.com]
+* Cheatsheet[http://www.cheatsheetapp.com/CheatSheet]
 * ColorSnapper[http://colorsnapper.com]
 * xScope[http://iconfactory.com/software/xscope]
 * 3Hub[http://3hubapp.com]

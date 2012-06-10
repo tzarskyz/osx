@@ -24,8 +24,6 @@ export ALFRED_URL=http://rwc.cachefly.net
 export ALFRED_FILE=alfred_1.2_220.dmg
 export PATH_FINDER_URL=http://get.cocoatech.com
 export PATH_FINDER_FILE=PathFinderSL6.dmg
-export CHEATSHEET_URL=http://mediaatelier.com/CheatSheet
-export CHEATSHEET_FILE=CheatSheet_1.0.1.zip
 export FIREFOX_URL=http://mozilla.c3sl.ufpr.br/releases//firefox/releases/12.0/mac/en-US
 export FIREFOX_FILE=Firefox%2012.0.dmg
 export CHROME_URL=https://dl.google.com/chrome/mac/stable/GGRO
@@ -164,9 +162,6 @@ install_dmg_app $ALFRED_URL $ALFRED_FILE "Alfred.app"
 
 # Path Finder
 install_dmg_app $PATH_FINDER_URL $PATH_FINDER_FILE "Path Finder"
-
-# CheatSheet
-install_zip_app $CHEATSHEET_URL $CHEATSHEET_FILE
 
 # Firefox
 install_dmg_app $FIREFOX_URL $FIREFOX_FILE "Firefox"

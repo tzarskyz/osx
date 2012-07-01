@@ -22,6 +22,8 @@ export SUBLIME_TEXT_URL=http://c758482.r82.cf2.rackcdn.com
 export SUBLIME_TEXT_FILE=Sublime%20Text%202.0.dmg
 export ALFRED_URL=http://rwc.cachefly.net
 export ALFRED_FILE=alfred_1.2_220.dmg
+export TEXTEXPANDER_URL=http://cdn.smilesoftware.com
+export TEXTEXPANDER_FILE=TextExpander_4.0.zip
 export PATH_FINDER_URL=http://get.cocoatech.com
 export PATH_FINDER_FILE=PathFinderSL6.dmg
 export FIREFOX_URL=http://mozilla.snt.utwente.nl//firefox/releases/13.0.1/mac/en-US
@@ -159,6 +161,9 @@ sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /u
 
 # Alfred
 install_dmg_app $ALFRED_URL $ALFRED_FILE "Alfred.app"
+
+# TextExpander
+install_zip_app $TEXTEXPANDER_URL $TEXTEXPANDER_FILE "TextExpander.app"
 
 # Path Finder
 install_dmg_app $PATH_FINDER_URL $PATH_FINDER_FILE "Path Finder"

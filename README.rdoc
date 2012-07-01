@@ -24,6 +24,7 @@ This project contains shell scripts for setting up a new OSX environment.
   * iTerm2[http://www.iterm2.com]
   * {Sublime Text 2}[http://www.sublimetext.com/2]
   * Alfred[http://www.alfredapp.com]
+  * TextExpander[http://www.smilesoftware.com/TextExpander]
   * {Path Finder}[http://cocoatech.com]
   * Firefox[http://www.mozilla.com/en-US/firefox]
   * {Google Chrome}[http://www.google.com/chrome]
@@ -92,7 +93,6 @@ Reboot the machine after the script has completed. Feel free to delete the osx p
 I also recommend installing the following software found via the {App Store}[http://www.apple.com/macosx/whats-new/app-store.html]:
 
 * 1Password[http://agilewebsolutions.com/products/1Password]
-* TextExpander[http://www.smilesoftware.com/TextExpander]
 * Fantastical[http://flexibits.com/fantastical]
 * Cobook[http://www.cobookapp.com]
 * Growl[http://growl.info]

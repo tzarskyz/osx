@@ -107,6 +107,9 @@ brew install imagemagick
 # Graphviz
 brew install graphviz
 
+# JSON Pretty Print
+brew install jsonpp
+
 # Ruby
 brew install rbenv
 brew install --HEAD ruby-build

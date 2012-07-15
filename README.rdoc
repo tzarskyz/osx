@@ -92,6 +92,7 @@ Reboot the machine after the script has completed. Feel free to delete the osx p
 
 I also recommend installing the following software found via the {App Store}[http://www.apple.com/macosx/whats-new/app-store.html]:
 
+* Moom[http://manytricks.com/moom]
 * 1Password[http://agilewebsolutions.com/products/1Password]
 * Fantastical[http://flexibits.com/fantastical]
 * Cobook[http://www.cobookapp.com]

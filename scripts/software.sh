@@ -86,6 +86,8 @@ export SKYPE_URL=http://download.skype.com/macosx
 export SKYPE_FILE=Skype_5.8.0.945.dmg
 export VIRTUAL_BOX_URL=http://download.virtualbox.org/virtualbox/4.1.12
 export VIRTUAL_BOX_FILE=VirtualBox-4.1.12-77245-OSX.dmg
+export EYEFI_URL=http://support.eye.fi/agent/download/3.4.29
+export EYEFI_FILE=Eye-Fi.dmg
 export DOXIE_URL=http://www.getdoxie.com/resources/files
 export DOXIE_FILE=Doxie.dmg
 
@@ -262,6 +264,9 @@ install_dmg_app $SKYPE_URL $SKYPE_FILE "Skype"
 
 # VirtualBox
 install_dmg_pkg $VIRTUAL_BOX_URL $VIRTUAL_BOX_FILE "VirtualBox"
+
+# Eye-Fi
+install_dmg_pkg $EYEFI_URL $EYEFI_FILE "Eye-Fi Installer"
 
 # Doxie
 install_dmg_pkg $DOXIE_URL $DOXIE_FILE "Doxie"

@@ -102,8 +102,8 @@ brew install git
 # GitHub
 brew install hub
 
-# Node
-brew install node
+# Pigz (http://www.zlib.net/pigz)
+brew install pigz
 
 # ImageMagick
 brew install imagemagick
@@ -113,6 +113,9 @@ brew install graphviz
 
 # JSON Pretty Print
 brew install jsonpp
+
+# Node
+brew install node
 
 # Ruby
 brew install rbenv

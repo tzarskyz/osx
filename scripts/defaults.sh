@@ -103,3 +103,6 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 echo "Prevent Time Machine from prompting to use new hard drives as backup volume"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+echo "Prevents Chrome from using it's own print dialog and uses the system dialog instead"
+defaults write com.google.Chrome DisablePrintPreview -boolean true

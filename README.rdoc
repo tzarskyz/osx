@@ -142,7 +142,7 @@ The following is a checklist of additional steps worth completing after the scri
 
 = Contributions
 
-Please log all feedback/issues via {GitHub Issues}[https://github.com/bkuhlmann/osx/issues]. Thanks.
+Read CONTRIBUTING for details.
 
 = Credits
 

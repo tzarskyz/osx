@@ -105,14 +105,17 @@ brew install hub
 # Pigz (http://www.zlib.net/pigz)
 brew install pigz
 
+# JSON Pretty Print
+brew install jsonpp
+
+# Network Grep (http://ngrep.sourceforge.net)
+brew install ngrep
+
 # ImageMagick
 brew install imagemagick
 
 # Graphviz
 brew install graphviz
-
-# JSON Pretty Print
-brew install jsonpp
 
 # Node
 brew install node

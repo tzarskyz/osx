@@ -105,8 +105,8 @@ brew install hub
 # Pigz (http://www.zlib.net/pigz)
 brew install pigz
 
-# JSON Pretty Print
-brew install jsonpp
+# JSON CLI Parser (http://stedolan.github.com/jq)
+brew install jq
 
 # Network Grep (http://ngrep.sourceforge.net)
 brew install ngrep

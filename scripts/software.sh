@@ -120,6 +120,9 @@ brew install graphviz
 # Node
 brew install node
 
+# Phantom.js
+brew install phantomjs
+
 # Ruby
 brew install rbenv
 brew install --HEAD ruby-build

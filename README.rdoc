@@ -107,6 +107,7 @@ I also recommend installing the following software found via the {App Store}[htt
 * xScope[http://iconfactory.com/software/xscope]
 * LittleSnapper[http://www.realmacsoftware.com/littlesnapper]
 * Pixelmator[http://www.pixelmator.com]
+* {Cocoa JSON Editor}[http://www.cocoajsoneditor.com]
 * AquaPath[http://ditchnet.org/aquapath]
 * GarageBand[http://www.apple.com/ilife/garageband]
 * iMovie[http://www.apple.com/ilife/imovie]

@@ -48,6 +48,8 @@ export AIR_DISPLAY_URL=http://avatron.com/downloads
 export AIR_DISPLAY_FILE=AirDisplayInstaller.dmg
 export PASTEBOT_SYNC_URL=http://tapbots.net/pastebot
 export PASTEBOT_SYNC_FILE=PastebotSync.dmg
+export BARTENDER_URL=http://www.macbartender.com/Demo
+export BARTENDER_SYNC_FILE=Bartender.zip
 export GITHUB_URL=https://github-central.s3.amazonaws.com
 export GITHUB_FILE=mac%2FGitHub%20for%20Mac%201.2.6.zip
 export SNIPPETS_URL=http://www.snippetsapp.com/download
@@ -216,6 +218,9 @@ install_dmg_pkg $AIR_DISPLAY_URL $AIR_DISPLAY_FILE "Air Display Installer"
 
 # Pastebot Sync (preference pane)
 download_only $PASTEBOT_SYNC_URL $PASTEBOT_SYNC_FILE
+
+# Bartender
+install_zip_app $BARTENDER_URL $BARTENDER_FILE
 
 # GitHub
 install_zip_app $GITHUB_URL $GITHUB_FILE

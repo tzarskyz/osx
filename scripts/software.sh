@@ -68,6 +68,8 @@ export IMAGE_ALPHA_URL=http://pngmini.com
 export IMAGE_ALPHA_FILE=ImageAlpha1.2.3.tar.bz2
 export VLC_URL=http://superb-dca2.dl.sourceforge.net/project/vlc/2.0.1/macosx
 export VLC_FILE=vlc-2.0.1.dmg
+export INDUCTION_URL=https://mesmerize.s3.amazonaws.com/Induction
+export INDUCTION_FILE=Induction-28.zip
 export PG_ADMIN_URL=http://ftp.postgresql.org/pub/pgadmin3/release/v1.16.0/osx
 export PG_ADMIN_FILE=pgadmin3-1.16.0.dmg
 export NAMEBENCH_URL=http://namebench.googlecode.com/files/namebench-1.3.1-Mac_OS_X.dmg
@@ -248,6 +250,9 @@ install_tar_app $IMAGE_ALPHA_URL $IMAGE_ALPHA_FILE "-xjf"
 
 # VLC
 install_dmg_app $VLC_URL $VLC_FILE "vlc-2.0.1"
+
+# Induction
+install_zip_app $INDUCTION_URL $INDUCTION_FILE
 
 # PG Admin
 install_dmg_app $PG_ADMIN_URL $PG_ADMIN_FILE "pgAdmin3"

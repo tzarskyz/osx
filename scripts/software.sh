@@ -100,6 +100,9 @@ export DOXIE_FILE=Doxie.dmg
 /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 brew update
 
+# Bash Completion (http://bash-completion.alioth.debian.org)
+brew install bash-completion
+
 # Git
 brew install git
 

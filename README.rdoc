@@ -1,5 +1,7 @@
 = Overview
 
+{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/bkuhlmann/osx]
+
 This project contains shell scripts for setting up a new OSX environment.
 
 = Features

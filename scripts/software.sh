@@ -133,10 +133,11 @@ brew install phantomjs
 # Ruby
 brew install rbenv
 brew install --HEAD ruby-build
-brew install rbenv-vars
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
+brew install rbenv-vars
 cp ../templates/rbenv_vars.txt $HOME/.rbenv/vars
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 rbenv rehash
 
 # Dotfiles

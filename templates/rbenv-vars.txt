@@ -1,0 +1,14 @@
+# Initial/minimum number of heap slots. Default: 10000.
+RUBY_HEAP_MIN_SLOTS=500000
+
+# The number of new slots to allocate when all initial slots are used. Default: 10000.
+RUBY_HEAP_SLOTS_INCREMENT=250000
+
+# The multiplicator use when new heap slots are required (i.e. RUBY_HEAP_SLOTS_INCREMENT * RUBY_HEAP_SLOTS_GROWTH_FACTOR). Default: 1.8.
+RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+
+# The number of C data structures that can be allocated before triggering the garbage collector. Default: 8000000.
+RUBY_GC_MALLOC_LIMIT=50000000
+
+# The number of free slots that should be present after GC finishes. If there are fewer slots than those defined it will allocate new ones according to RUBY_HEAP_SLOTS_INCREMENT and RUBY_HEAP_SLOTS_GROWTH_FACTOR parameters. Default: 4096.
+RUBY_HEAP_FREE_MIN=100000

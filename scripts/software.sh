@@ -136,6 +136,7 @@ brew install --HEAD ruby-build
 brew install rbenv-vars
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
+cp ../templates/rbenv_vars.txt $HOME/.rbenv/vars
 rbenv rehash
 
 # Dotfiles

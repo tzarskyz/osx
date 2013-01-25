@@ -133,6 +133,7 @@ brew install phantomjs
 # Ruby
 brew install rbenv
 brew install --HEAD ruby-build
+brew install rbenv-vars
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
 rbenv rehash

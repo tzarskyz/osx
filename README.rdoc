@@ -8,12 +8,19 @@ This project contains shell scripts for setting up a new OSX environment.
 
 * Configures default OSX settings.
 * Installs Homebrew[http://mxcl.github.com/homebrew] with the following formulas:
+  * {Bash Completion}[http://bash-completion.alioth.debian.org]
   * Git[http://git-scm.com]
   * Hub[https://github.com/defunkt/hub]
-  * Node[http://nodejs.org]
+  * Pigz[http://www.zlib.net/pigz]
+  * jq[http://stedolan.github.com/jq]
+  * {Network Grep}[http://ngrep.sourceforge.net]
+  * Node.js[http://nodejs.org]
+  * Phantom.js[http://phantomjs.org]
   * ImageMagick[http://www.imagemagick.org]
   * Graphviz[http://www.graphviz.org]
-  * JSONPP[https://github.com/jmhodges/jsonpp]
+  * rbenv[https://github.com/sstephenson/rbenv]
+  * rbenv-vars[https://github.com/sstephenson/rbenv-vars]
+  * rbenv-gem-rehash[https://github.com/sstephenson/rbenv-gem-rehash]
   * Ruby[http://www.ruby-lang.org]
   * Dotfiles[https://github.com/bkuhlmann/dotfiles]
   * {Ruby Gems}[https://github.com/bkuhlmann/ruby_gem_setup]
@@ -40,6 +47,7 @@ This project contains shell scripts for setting up a new OSX environment.
   * {iStat Menus}[http://bjango.com/apps/istatmenus]
   * {Air Display}[http://avatron.com/apps/air-display]
   * {Pastebot Sync}[http://tapbots.com/software/pastebot/#sync]
+  * Bartender[http://www.macbartender.com]
   * GitHub[http://mac.github.com]
   * Snippets[http://www.snippetsapp.com]
   * Espresso[http://macrabbit.com/espresso]
@@ -49,6 +57,7 @@ This project contains shell scripts for setting up a new OSX environment.
   * ImageOptim[http://imageoptim.pornel.net]
   * ImageAlpha[http://pornel.net/imagealpha]
   * VLC[http://www.videolan.org/vlc]
+  * Induction[http://inductionapp.com]
   * pgAdmin[http://www.pgadmin.org/index.php]
   * Namebench[https://code.google.com/p/namebench]
   * Billings[http://www.billingsapp.com]
@@ -58,6 +67,7 @@ This project contains shell scripts for setting up a new OSX environment.
   * Colloquy[http://colloquy.info]
   * Skype[http://www.skype.com]
   * VirtualBox[https://www.virtualbox.org]
+  * {Eye-Fi}[http://www.eye.fi]  
   * Doxie[http://www.getdoxie.com]
 
 = Requirements

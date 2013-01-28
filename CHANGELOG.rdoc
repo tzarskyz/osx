@@ -13,25 +13,22 @@
 * Upgraded to Firefox 18.0.
 * Upgraded to Skype 6.1.59.2295.
 * Upgraded to Ruby 1.9.3-p374.
-* Added jq.
 * Added Moom to the App Store section of the README.
-* Added the Tweetbot installer.
+* Added Cocoa JSON Editor to the App Store section of the README.
 * Added the Eye-Fi installer.
 * Added pigz brew installer.
-* Added defaults that disable the Chrome print dialog.
+* Added the jq installer.
 * Added the network grep install.
 * Added the Phantom.js brew install.
-* Added the Cocoa JSON Editor to the App Store list.
 * Added installer for the Bartender app.
 * Added install for the Induction app.
 * Added Homebrew installer for bash-completion.
-* Added Code Climate support. [ci skip]
-* Added the rbenv-vars installer.
-* Added global rbenv vars settings template and related installer.
-* Added Ruby GC reference info.
+* Added the rbenv-vars installer and template (with Ruby GC settings).
 * Added the rbenv-gem-rehash installer.
+* Added defaults that disable the Chrome print dialog.
+* Added Code Climate support.
 * Removed jsonpp.
-* Converted/detailed the CONTRIBUTING guidelines per GitHub requirements. [ci skip]
+* Converted/detailed the CONTRIBUTING guidelines per GitHub requirements.
 * Modified the dotfiles installer to use shell script instead of ruby script.
 * Moved default install after software installation.
 

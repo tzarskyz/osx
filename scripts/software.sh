@@ -84,8 +84,6 @@ export OPEN_OFFICE_URL=http://voxel.dl.sourceforge.net/project/openofficeorg.mir
 export OPEN_OFFICE_FILE=OOo_3.3.0_MacOS_x86_install_en-US.dmg
 export COLLOQUY_URL=http://colloquy.info/downloads
 export COLLOQUY_FILE=colloquy-latest.zip
-export TWEETBOT_URL=http://c401222.r22.cf1.rackcdn.com
-export TWEETBOT_FILE=Tweetbot.zip
 export SKYPE_URL=http://download.skype.com/macosx
 export SKYPE_FILE=Skype_6.1.59.2295.dmg
 export VIRTUAL_BOX_URL=http://download.virtualbox.org/virtualbox/4.1.12
@@ -280,9 +278,6 @@ install_dmg_app $OPEN_OFFICE_URL $OPEN_OFFICE_FILE "OpenOffice.org 3.3"
 
 # Colloquy
 install_zip_app $COLLOQUY_URL $COLLOQUY_FILE
-
-# Tweetbot
-install_zip_app $TWEETBOT_URL $TWEETBOT_FILE
 
 # Skype
 install_dmg_app $SKYPE_URL $SKYPE_FILE "Skype"

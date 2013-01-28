@@ -143,7 +143,7 @@ rbenv rehash
 # Dotfiles
 git clone git://github.com/bkuhlmann/dotfiles.git
 cd dotfiles
-ruby install.rb
+./install.sh
 cd $HOME
 rm -rf dotfiles
 source ~/.bashrc

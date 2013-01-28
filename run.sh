@@ -20,11 +20,11 @@ export WORK_PATH=/private/tmp/downloads # Temporary location for processing of f
 echo "Setting OSX basic settings..."
 scripts/basic.sh
 
-echo "Setting OSX defaults..."
-scripts/defaults.sh
-
 echo "Installing OSX software..."
 scripts/software.sh
+
+echo "Setting OSX defaults..."
+scripts/defaults.sh
 
 echo "Cleaning..."
 rm -rf $WORK_PATH

@@ -75,7 +75,7 @@ Current Version (stable):
 
   git clone git://github.com/bkuhlmann/osx.git
   cd osx
-  git checkout v0.3.0
+  git checkout v0.4.0
 
 Master Version (unstable):
 

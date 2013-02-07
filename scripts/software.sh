@@ -7,7 +7,7 @@
 # ./software.sh
 
 # SETTINGS
-export RUBY_VERSION=1.9.3-p374
+export RUBY_VERSION=1.9.3-p385
 export POSTGRESQL_VERSION=9.1.3
 export REDIS_VERSION=2.4.13
 export CAFFEINE_URL=http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine

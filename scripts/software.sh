@@ -128,6 +128,13 @@ brew install node
 # Phantom.js
 brew install phantomjs
 
+# Ruby Gems
+git clone git://github.com/bkuhlmann/ruby_gem_setup.git
+cd ruby_gem_setup
+./install.sh
+cd $HOME
+rm -rf ruby_gem_setup
+
 # Ruby
 brew install rbenv
 brew install --HEAD ruby-build
@@ -146,13 +153,6 @@ cd dotfiles
 cd $HOME
 rm -rf dotfiles
 source $HOME/.bashrc
-
-# Ruby Gems
-git clone git://github.com/bkuhlmann/ruby_gem_setup.git
-cd ruby_gem_setup
-ruby setup.rb
-cd $HOME
-rm -rf ruby_gem_setup
 
 # Pow
 curl get.pow.cx | sh

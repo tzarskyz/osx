@@ -133,8 +133,8 @@ brew install rbenv
 brew install --HEAD ruby-build
 brew install rbenv-vars
 cp ../templates/rbenv_vars.txt $HOME/.rbenv/vars
-git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-git clone https://github.com/sstephenson/rbenv-default-gems.git ~/.rbenv/plugins/rbenv-default-gems
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git $HOME/.rbenv/plugins/rbenv-gem-rehash
+git clone https://github.com/sstephenson/rbenv-default-gems.git $HOME/.rbenv/plugins/rbenv-default-gems
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
 rbenv rehash
@@ -145,7 +145,7 @@ cd dotfiles
 ./install.sh
 cd $HOME
 rm -rf dotfiles
-source ~/.bashrc
+source $HOME/.bashrc
 
 # Ruby Gems
 git clone git://github.com/bkuhlmann/ruby_gem_setup.git
@@ -160,13 +160,13 @@ curl get.pow.cx | sh
 # PostgreSQL
 brew install postgresql
 initdb /usr/local/var/postgres
-cp /usr/local/Cellar/postgresql/$POSTGRESQL_VERSION/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/
-launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+cp /usr/local/Cellar/postgresql/$POSTGRESQL_VERSION/homebrew.mxcl.postgresql.plist $HOME/Library/LaunchAgents
+launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Redis
 brew install redis
-cp /usr/local/Cellar/redis/$REDIS_VERSION/homebrew.mxcl.redis.plist ~/Library/LaunchAgents/
-launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+cp /usr/local/Cellar/redis/$REDIS_VERSION/homebrew.mxcl.redis.plist $HOME/Library/LaunchAgents/
+launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.redis.plist
 
 # Caffeine
 install_zip_app $CAFFEINE_URL $CAFFEINE_FILE

@@ -72,8 +72,8 @@ echo "Disable the “reopen windows when logging back in” option"
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 
-echo "Show the ~/Library folder"
-chflags nohidden ~/Library
+echo "Show the $HOME/Library folder"
+chflags nohidden $HOME/Library
 
 echo "Remove the auto-hiding Dock delay"
 defaults write com.apple.Dock autohide-delay -float 0

@@ -149,5 +149,12 @@ defaults write com.apple.addressbook ABShowDebugMenu -bool true
 echo "iCal - Enable debug menu"
 defaults write com.apple.iCal IncludeDebugMenu -bool true
 
+echo "TextEdit - Use plain text mode for new documents"
+defaults write com.apple.TextEdit RichText -int 0
+
+echo "TextEdit - Open and save files as UTF-8 encoding"
+defaults write com.apple.TextEdit PlainTextEncoding -int 4
+defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+
 echo "Printer - Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true

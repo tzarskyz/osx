@@ -13,6 +13,9 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 echo "Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
+echo "Enable keyboard access for all controls"
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
 echo "Disable the 'Are you sure you want to open this application?' dialog"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 

@@ -78,6 +78,9 @@ defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 echo "Show the $HOME/Library folder"
 chflags nohidden $HOME/Library
 
+echo "Don’t show Dashboard as a Space"
+defaults write com.apple.dock "dashboard-in-overlay" -bool true
+
 echo "Remove the auto-hiding Dock delay"
 defaults write com.apple.Dock autohide-delay -float 0
 

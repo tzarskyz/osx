@@ -119,4 +119,5 @@ defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreS
 echo "Save to disk (not to iCloud) by default"
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-
+echo "Printer - Automatically quit printer app once the print jobs complete"
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true

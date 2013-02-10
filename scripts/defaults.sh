@@ -116,3 +116,7 @@ defaults write com.google.Chrome DisablePrintPreview -boolean true
 echo "Menu Bar - Hide the Time Machine and Volume icons"
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
+echo "Save to disk (not to iCloud) by default"
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+

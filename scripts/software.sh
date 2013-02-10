@@ -54,8 +54,8 @@ export GITX_URL=https://github.com/downloads/laullon/gitx
 export GITX_FILE=GitX-L_v0.8.4.zip
 export SNIPPETS_URL=http://www.snippetsapp.com/download
 export SNIPPETS_FILE=Snippets-1.4.1.zip
-export ESPRESSO_URL=http://macrabbit.com/espresso/downloads
-export ESPRESSO_FILE=Espresso%202.0.1.dmg
+export ESPRESSO_URL=https://s3.amazonaws.com/macrabbit/downloads
+export ESPRESSO_FILE=Espresso%202.0.5.zip
 export CODEKIT_URL=http://incident57.com/codekit/files
 export CODEKIT_FILE=codekit-6166.zip
 export ACORN_URL=http://flyingmeat.com/download
@@ -240,7 +240,7 @@ install_zip_app $GITX_URL $GITX_FILE
 install_zip_app $SNIPPETS_URL $SNIPPETS_FILE
 
 # Espresso
-install_dmg_app $ESPRESSO_URL $ESPRESSO_FILE "Espresso 2.0.1"
+install_zip_app $ESPRESSO_URL $ESPRESSO_FILE
 
 # CodeKit
 install_zip_app $CODEKIT_URL $CODEKIT_FILE

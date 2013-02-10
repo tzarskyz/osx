@@ -7,6 +7,9 @@
 # ./defaults.sh
 
 # EXECUTION
+echo "Disable automatic termination of inactive apps"
+defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
 echo "Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
@@ -25,17 +28,6 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 echo "Disable auto-correct"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-echo "Enable tap to click (Trackpad) for this user and for the login screen"
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-echo "Map bottom right Trackpad corner to right-click"
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
-
 echo "Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
@@ -43,28 +35,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 echo "Avoid creating .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-echo "Map bottom right Trackpad corner to right-click"
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-
 echo "Disable the “reopen windows when logging back in” option"
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
-
-echo "Disable the Ping sidebar in iTunes"
-defaults write com.apple.iTunes disablePingSidebar -bool true
-
-echo "Disable all the Ping related features in iTunes"
-defaults write com.apple.iTunes disablePing -bool true
-
-echo "Copy email addresses as 'foo@example.com' instead of 'Foo Bar <foo@example.com>'' in Mail.app"
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-echo "Prevent Time Machine from prompting to use new hard drives as backup volume"
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-echo "Prevents Chrome from using it's own print dialog and uses the system dialog instead"
-defaults write com.google.Chrome DisablePrintPreview -boolean true
 
 echo "Keyboard - Automatically illuminate built-in MacBook keyboard in low light"
 defaults write com.apple.BezelServices kDim -bool true
@@ -78,14 +51,22 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 echo "Keyboard - Set a fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 0
 
+echo "Trackpad - Map bottom right corner to right-click"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+echo "Trackpad - Enable tap to click for current user and the login screen"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
 echo "Menu Bar - Hide the Time Machine and Volume icons"
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 echo "Save to disk (not to iCloud) by default"
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-echo "Apps - Disable automatic termination of inactive apps"
-defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 echo "Dock - Automatically hide and show"
 defaults write com.apple.dock autohide -bool true
@@ -143,6 +124,12 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 echo "Safari - Add a context menu item for showing the Web Inspector in web views"
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+echo "Chrome - Prevent native print dialog, use system dialog instead"
+defaults write com.google.Chrome DisablePrintPreview -boolean true
+
+echo "Mail - Copy email addresses as 'foo@example.com' instead of 'Foo Bar <foo@example.com>'"
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
 echo "Address Book - Enable debug menu"
 defaults write com.apple.addressbook ABShowDebugMenu -bool true
 
@@ -155,6 +142,9 @@ defaults write com.apple.TextEdit RichText -int 0
 echo "TextEdit - Open and save files as UTF-8 encoding"
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+
+echo "Time Machine - Prevent prompting to use new hard drives as backup volume"
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 echo "Printer - Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true

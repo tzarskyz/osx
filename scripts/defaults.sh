@@ -110,7 +110,10 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 echo "Apps - Disable automatic termination of inactive apps"
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
-echo "Finder - Show all filename extensions"
+echo "Finder - Show hidden files"
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+echo "Finder - Show filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 echo "Finder - Allow quitting via ⌘ + Q; doing so will also hide desktop icons"

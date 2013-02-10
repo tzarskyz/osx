@@ -112,7 +112,6 @@ I also recommend installing the following software found via the {App Store}[htt
 * Cheatsheet[http://www.cheatsheetapp.com/CheatSheet]
 * 3Hub[http://3hubapp.com]
 * PDFpenPro[http://www.smilesoftware.com/PDFpenPro/index.html]
-* Gitbox[http://gitboxapp.com]
 * Patterns[http://krillapps.com/patterns]
 * ColorSnapper[http://colorsnapper.com]
 * Gradient[http://www.gradientapp.com]

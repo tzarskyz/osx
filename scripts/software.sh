@@ -8,7 +8,6 @@
 
 # SETTINGS
 export RUBY_VERSION=1.9.3-p385
-export POSTGRESQL_VERSION=9.1.3
 export REDIS_VERSION=2.4.13
 export CAFFEINE_URL=http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine
 export CAFFEINE_FILE=Caffeine1.1.1.zip
@@ -162,7 +161,8 @@ curl get.pow.cx | sh
 # PostgreSQL
 brew install postgresql
 initdb /usr/local/var/postgres
-cp /usr/local/Cellar/postgresql/$POSTGRESQL_VERSION/homebrew.mxcl.postgresql.plist $HOME/Library/LaunchAgents
+
+cp /usr/local/Cellar/postgresql/*/homebrew.mxcl.postgresql.plist $HOME/Library/LaunchAgents
 launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Redis

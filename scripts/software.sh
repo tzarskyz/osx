@@ -137,11 +137,11 @@ rm -rf ruby_gem_setup
 
 # Ruby
 brew install rbenv
-brew install --HEAD ruby-build
+brew install rbenv-gem-rehash
+brew install rbenv-default-gems
 brew install rbenv-vars
 cp ../templates/rbenv_vars.txt $HOME/.rbenv/vars
-git clone https://github.com/sstephenson/rbenv-gem-rehash.git $HOME/.rbenv/plugins/rbenv-gem-rehash
-git clone https://github.com/sstephenson/rbenv-default-gems.git $HOME/.rbenv/plugins/rbenv-default-gems
+brew install --HEAD ruby-build
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
 rbenv rehash

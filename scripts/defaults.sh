@@ -51,9 +51,6 @@ echo "Disable the “reopen windows when logging back in” option"
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 
-echo "Enable Safari’s debug menu"
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-
 echo "Disable the Ping sidebar in iTunes"
 defaults write com.apple.iTunes disablePingSidebar -bool true
 
@@ -129,6 +126,22 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 echo "Finder - Allow text selection in Quick Look"
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
+echo "Safari - Hide bookmarks bar"
+defaults write com.apple.Safari ShowFavoritesBar -bool false
+
+echo "Safari - Use Contains instead of Starts With in search banners"
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+
+echo "Safari - Enable debug menu"
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+echo "Safari - Enable the Develop menu and the Web Inspector"
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+echo "Safari - Add a context menu item for showing the Web Inspector in web views"
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
 echo "Printer - Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
-

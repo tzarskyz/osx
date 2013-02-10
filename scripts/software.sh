@@ -8,7 +8,6 @@
 
 # SETTINGS
 export RUBY_VERSION=1.9.3-p385
-export REDIS_VERSION=2.4.13
 export CAFFEINE_URL=http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine
 export CAFFEINE_FILE=Caffeine1.1.1.zip
 export DROPBOX_URL=https://d1ilhw0800yew8.cloudfront.net/client
@@ -167,7 +166,7 @@ launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Redis
 brew install redis
-cp /usr/local/Cellar/redis/$REDIS_VERSION/homebrew.mxcl.redis.plist $HOME/Library/LaunchAgents/
+cp /usr/local/Cellar/redis/*/homebrew.mxcl.redis.plist $HOME/Library/LaunchAgents/
 launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.redis.plist
 
 # Caffeine

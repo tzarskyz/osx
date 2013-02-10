@@ -112,3 +112,7 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 echo "Prevents Chrome from using it's own print dialog and uses the system dialog instead"
 defaults write com.google.Chrome DisablePrintPreview -boolean true
+
+echo "Menu Bar - Hide the Time Machine and Volume icons"
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
+

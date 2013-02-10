@@ -52,6 +52,8 @@ export BARTENDER_URL=http://www.macbartender.com/Demo
 export BARTENDER_SYNC_FILE=Bartender.zip
 export GITHUB_URL=https://github-central.s3.amazonaws.com
 export GITHUB_FILE=mac%2FGitHub%20for%20Mac%201.2.6.zip
+export GITX_URL=https://github.com/downloads/laullon/gitx
+export GITX_FILE=GitX-L_v0.8.4.zip
 export SNIPPETS_URL=http://www.snippetsapp.com/download
 export SNIPPETS_FILE=Snippets-1.4.zip
 export ESPRESSO_URL=http://macrabbit.com/espresso/downloads
@@ -231,6 +233,9 @@ install_zip_app $BARTENDER_URL $BARTENDER_FILE
 
 # GitHub
 install_zip_app $GITHUB_URL $GITHUB_FILE
+
+# GitX
+install_zip_app $GITX_URL $GITX_FILE
 
 # Snippets
 install_zip_app $SNIPPETS_URL $SNIPPETS_FILE

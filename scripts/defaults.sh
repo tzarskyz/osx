@@ -7,9 +7,6 @@
 # ./defaults.sh
 
 # EXECUTION
-echo "Show all filename extensions in Finder"
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
 echo "Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
@@ -43,23 +40,8 @@ echo "Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-echo "Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons"
-defaults write com.apple.finder QuitMenuItem -bool true
-
-echo "Show all filename extensions in Finder"
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
-echo "Allow text selection in Quick Look"
-defaults write com.apple.finder QLEnableTextSelection -bool true
-
 echo "Avoid creating .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-
-echo "Disable the warning when changing a file extension"
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
-echo "Disable the warning before emptying the Trash"
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 echo "Map bottom right Trackpad corner to right-click"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
@@ -127,6 +109,24 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 echo "Apps - Disable automatic termination of inactive apps"
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
+echo "Finder - Show all filename extensions"
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+echo "Finder - Allow quitting via ⌘ + Q; doing so will also hide desktop icons"
+defaults write com.apple.finder QuitMenuItem -bool true
+
+echo "Finder - Show all filename extensions"
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+echo "Finder - Disable the warning when changing a file extension"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+echo "Finder - Disable the warning before emptying the Trash"
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+echo "Finder - Allow text selection in Quick Look"
+defaults write com.apple.finder QLEnableTextSelection -bool true
 
 echo "Printer - Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true

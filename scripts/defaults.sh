@@ -116,14 +116,20 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 echo "Finder - Show filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-echo "Finder - Allow quitting via ⌘ + Q; doing so will also hide desktop icons"
-defaults write com.apple.finder QuitMenuItem -bool true
-
-echo "Finder - Show all filename extensions"
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
 echo "Finder - Disable the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+echo "Finder - Show status bar"
+defaults write com.apple.finder ShowStatusBar -bool true
+
+echo "Finder - Display full POSIX path as window title"
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+echo "Finder - Use list view in all Finder windows"
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+echo "Finder - Allow quitting via ⌘ + Q; doing so will also hide desktop icons"
+defaults write com.apple.finder QuitMenuItem -bool true
 
 echo "Finder - Disable the warning before emptying the Trash"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false

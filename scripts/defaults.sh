@@ -13,9 +13,6 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 echo "Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-echo "Enable keyboard access for all controls"
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
 echo "Disable the 'Are you sure you want to open this application?' dialog"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
@@ -27,9 +24,6 @@ defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
 echo "Disable press-and-hold for keys in favor of key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-
-echo "Set a fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 0
 
 echo "Disable auto-correct"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -112,6 +106,18 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 echo "Prevents Chrome from using it's own print dialog and uses the system dialog instead"
 defaults write com.google.Chrome DisablePrintPreview -boolean true
+
+echo "Keyboard - Automatically illuminate built-in MacBook keyboard in low light"
+defaults write com.apple.BezelServices kDim -bool true
+
+echo "Keyboard - Turn off keyboard illumination when computer is not used for 5 minutes"
+defaults write com.apple.BezelServices kDimTime -int 300
+
+echo "Keyboard - Enable keyboard access for all controls"
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+echo "Keyboard - Set a fast keyboard repeat rate"
+defaults write NSGlobalDomain KeyRepeat -int 0
 
 echo "Menu Bar - Hide the Time Machine and Volume icons"
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"

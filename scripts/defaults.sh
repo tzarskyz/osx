@@ -143,5 +143,11 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 echo "Safari - Add a context menu item for showing the Web Inspector in web views"
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+echo "Address Book - Enable debug menu"
+defaults write com.apple.addressbook ABShowDebugMenu -bool true
+
+echo "iCal - Enable debug menu"
+defaults write com.apple.iCal IncludeDebugMenu -bool true
+
 echo "Printer - Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true

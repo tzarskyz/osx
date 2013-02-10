@@ -51,26 +51,6 @@ echo "Disable the “reopen windows when logging back in” option"
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 
-echo "Show the $HOME/Library folder"
-chflags nohidden $HOME/Library
-
-echo "Don’t show Dashboard as a Space"
-defaults write com.apple.dock "dashboard-in-overlay" -bool true
-
-echo "Remove the auto-hiding Dock delay"
-defaults write com.apple.Dock autohide-delay -float 0
-
-echo "Automatically hide and show the Dock"
-defaults write com.apple.dock autohide -bool true
-
-echo "Hot Corner - Top right screen corner - Application Windows"
-defaults write com.apple.dock wvous-tr-corner -int 3
-defaults write com.apple.dock wvous-tr-modifier -int 0
-
-echo "Hot Corner - Bottom right screen corner - Desktop"
-defaults write com.apple.dock wvous-br-corner -int 4
-defaults write com.apple.dock wvous-br-modifier -int 0
-
 echo "Enable Safari’s debug menu"
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
@@ -109,6 +89,18 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 echo "Apps - Disable automatic termination of inactive apps"
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
+echo "Dock - Automatically hide and show"
+defaults write com.apple.dock autohide -bool true
+
+echo "Dock - Remove the auto-hiding delay"
+defaults write com.apple.Dock autohide-delay -float 0
+
+echo "Dock - Don’t show Dashboard as a Space"
+defaults write com.apple.dock "dashboard-in-overlay" -bool true
+
+echo "Finder - Show the $HOME/Library folder"
+chflags nohidden $HOME/Library
 
 echo "Finder - Show hidden files"
 defaults write com.apple.finder AppleShowAllFiles -bool true

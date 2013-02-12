@@ -96,7 +96,6 @@ export DOXIE_FILE=Doxie.dmg
 # EXECUTION
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-brew update
 
 # Bash Completion (http://bash-completion.alioth.debian.org)
 brew install bash-completion

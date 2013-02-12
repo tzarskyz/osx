@@ -94,7 +94,7 @@ Master Version (unstable):
 
 = Usage
 
-Edit any of the *.sh files in the scripts folder to your liking and then ppen a terminal window and execute the following command:
+Edit any of the *.sh files in the scripts folder to your liking and then open a terminal window and execute the following command:
 
   ./run.sh
 

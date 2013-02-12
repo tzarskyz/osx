@@ -95,7 +95,7 @@ export DOXIE_FILE=Doxie.dmg
 
 # EXECUTION
 # Homebrew
-/usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 brew update
 
 # Bash Completion (http://bash-completion.alioth.debian.org)

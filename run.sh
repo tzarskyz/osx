@@ -17,16 +17,21 @@ export WORK_PATH=/private/tmp/downloads # Temporary location for processing of f
 . functions/installers.sh
 
 # EXECUTION
-echo "Setting OSX basic settings..."
-scripts/basic.sh
+read -p "Are the OSX software update, Xcode, etc. requirements complete? (y/n)?: " response
+if [ "$response" == 'y' ]; then
+  echo "Setting OSX basic settings..."
+  scripts/basic.sh
 
-echo "Installing OSX software..."
-scripts/software.sh
+  echo "Installing OSX software..."
+  scripts/software.sh
 
-echo "Setting OSX defaults..."
-scripts/defaults.sh
+  echo "Setting OSX defaults..."
+  scripts/defaults.sh
 
-echo "Cleaning..."
-rm -rf $WORK_PATH
+  echo "Cleaning..."
+  rm -rf $WORK_PATH
 
-echo "OSX setup complete!"
+  echo "OSX setup complete!"
+else
+  echo "Whew, that was a close one. OSX setup aborted."
+fi

@@ -64,8 +64,6 @@ export DOUBLETAKE_URL=http://echoone.com/doubletake
 export DOUBLETAKE_FILE=DoubleTake.dmg
 export IMAGE_OPTIM_URL=http://imageoptim.com
 export IMAGE_OPTIM_FILE=ImageOptim.tbz2
-export IMAGE_ALPHA_URL=http://pngmini.com
-export IMAGE_ALPHA_FILE=ImageAlpha1.2.3.tar.bz2
 export VLC_URL=http://hivelocity.dl.sourceforge.net/project/vlc/2.0.5/macosx
 export VLC_FILE=vlc-2.0.5.dmg
 export INDUCTION_URL=https://mesmerize.s3.amazonaws.com/Induction
@@ -252,9 +250,6 @@ install_dmg_app $DOUBLETAKE_URL $DOUBLETAKE_FILE "DoubleTake"
 
 # ImageOptim
 install_tar_app $IMAGE_OPTIM_URL $IMAGE_OPTIM_FILE "-xjf"
-
-# ImageAlpha
-install_tar_app $IMAGE_ALPHA_URL $IMAGE_ALPHA_FILE "-xjf"
 
 # VLC
 install_dmg_app $VLC_URL $VLC_FILE "vlc-2.0.1"

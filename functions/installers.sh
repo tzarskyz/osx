@@ -161,7 +161,7 @@ function install_zip_app {
 
     echo "Preparing..."
     cd "$WORK_PATH"
-    unzip "$2"
+    unzip -q "$2"
 
     install_app "$WORK_PATH" "$3"
     verify_install "$3"

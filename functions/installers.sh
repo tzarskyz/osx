@@ -8,9 +8,7 @@
 # $1 = The application name.
 function verify_install {
   application="/Applications/$1.app"
-  if [ -e "$application" ]; then
-    echo "$application install complete."
-  else
+  if [ ! -e "$application" ]; then
     echo "ERROR: $application not found. Existing."
     exit 1
   fi
@@ -70,17 +68,8 @@ export -f download_only
 # $1 = The application path.
 # $2 = The application name.
 function install_app {
-	app_name = "$2.app"
-	app_path = "/Applications/$app_name"
-
-  if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
-  else
-    echo "Installing $app_path..."
-    cp -a "$1/$app_name" "/Applications"
-  fi
-
-  verify_install "$2"
+  echo "Installing /Applications/$2.app..."
+  cp -av "$1/$2.app" "/Applications"
 }
 export -f install_app
 
@@ -89,17 +78,8 @@ export -f install_app
 # $1 = The package path.
 # $2 = The application name.
 function install_pkg {
-  app_name = "$2.app"
-  app_path = "/Applications/$app_name"
-
-  if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
-  else
-    echo "Installing $app_path..."
-    find "$1" -type f -name "*.pkg" -o -name "*.mpkg" -exec sh -c 'sudo installer -pkg "$0" -target /' {} ';'
-  fi
-
-  verify_install "$2"  
+  echo "Installing /Applications/$2.app..."
+  find "$1" -type f -name "*.pkg" -o -name "*.mpkg" -exec sh -c 'sudo installer -pkg "$0" -target /' {} ';'
 }
 export -f install_pkg
 
@@ -110,19 +90,27 @@ export -f install_pkg
 # $3 = The mount path.
 # $4 = The application name.
 function install_dmg_pkg {
-  mount_point="/Volumes/$3"
+  app_name="$4.app"
+  app_path="/Applications/$app_name"
 
-  download_installer $1 $2
-  download_file="$WORK_PATH/$2"
+  if [ -e "$app_path" ]; then
+    echo "$app_path exists, skipping."
+  else
+    download_installer $1 $2
+    download_file="$WORK_PATH/$2"
 
-  echo "Mounting..."
-  hdiutil attach "$download_file" -noidmereveal
+    echo "Mounting..."
+    hdiutil attach "$download_file" -noidmereveal
+    mount_point="/Volumes/$3"
 
-  install_pkg "$mount_point" "$4"
+    install_pkg "$mount_point" "$4"
 
-  echo "Cleaning..."
-  hdiutil detach -force "$mount_point"
-  rm -f $download_file
+    echo "Cleaning..."
+    hdiutil detach -force "$mount_point"
+    rm -f $download_file
+
+    verify_install "$4"
+  fi
 }
 export -f install_dmg_pkg
 
@@ -133,19 +121,27 @@ export -f install_dmg_pkg
 # $3 = The mount path.
 # $4 = The application name.
 function install_dmg_app {
-  mount_point="/Volumes/$3"
+  app_name="$4.app"
+  app_path="/Applications/$app_name"
 
-  download_installer $1 $2
-  download_file="$WORK_PATH/$2"
+  if [ -e "$app_path" ]; then
+    echo "$app_path exists, skipping."
+  else
+    download_installer $1 $2
+    download_file="$WORK_PATH/$2"
 
-  echo "Mounting..."
-  hdiutil attach "$download_file" -noidmereveal
+    echo "Mounting..."
+    hdiutil attach "$download_file" -noidmereveal
+    mount_point="/Volumes/$3"
 
-  install_app "$mount_point" "$4"
+    install_app "$mount_point" "$4"
 
-  echo "Cleaning..."
-  hdiutil detach -force "$mount_point"
-  rm -f $download_file
+    echo "Cleaning..."
+    hdiutil detach -force "$mount_point"
+    rm -f $download_file
+
+    verify_install "$4"
+  fi
 }
 export -f install_dmg_app
 
@@ -155,13 +151,21 @@ export -f install_dmg_app
 # $2 = The download file name.
 # $3 = The application name.
 function install_zip_app {
-  download_installer $1 $2
+  app_name="$3.app"
+  app_path="/Applications/$app_name"
 
-  echo "Preparing..."
-  cd "$WORK_PATH"
-  unzip "$2"
+  if [ -e "$app_path" ]; then
+    echo "$app_path exists, skipping."
+  else
+    download_installer $1 $2
 
-  install_app "$WORK_PATH" "$3"
+    echo "Preparing..."
+    cd "$WORK_PATH"
+    unzip "$2"
+
+    install_app "$WORK_PATH" "$3"
+    verify_install "$3"
+  fi
 }
 export -f install_zip_app
 
@@ -172,12 +176,20 @@ export -f install_zip_app
 # $3 = The uncompress options.
 # $4 = The application name.
 function install_tar_app {
-  download_installer $1 $2
+  app_name="$4.app"
+  app_path="/Applications/$app_name"
 
-  echo "Preparing..."
-  cd "$WORK_PATH"
-  tar "$3" "$2"
+  if [ -e "$app_path" ]; then
+    echo "$app_path exists, skipping."
+  else
+    download_installer $1 $2
 
-  install_app "$WORK_PATH" "$4"
+    echo "Preparing..."
+    cd "$WORK_PATH"
+    tar "$3" "$2"
+
+    install_app "$WORK_PATH" "$4"
+    verify_install "$4"
+  fi
 }
 export -f install_tar_app

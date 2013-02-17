@@ -71,7 +71,7 @@ curl get.pow.cx | sh
 
 # PostgreSQL
 brew install postgresql
-initdb /usr/local/var/postgres
+initdb /usr/local/var/postgres -E utf8
 
 cp /usr/local/Cellar/postgresql/*/homebrew.mxcl.postgresql.plist $HOME/Library/LaunchAgents
 launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.postgresql.plist

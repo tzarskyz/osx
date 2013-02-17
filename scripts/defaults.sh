@@ -3,9 +3,6 @@
 # DESCRIPTION
 # Configures useful defaults for OSX.
 
-# USAGE
-# ./defaults.sh
-
 # EXECUTION
 echo "Disable automatic termination of inactive apps"
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true

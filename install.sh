@@ -18,10 +18,11 @@ echo ''
 while true; do
   echo "Options:"
   echo "  b: Apply basic machine settings."
-  echo "  s: Install software."
+  echo "  h: Install Homebrew software."
+  echo "  a: Install application software."
   echo "  d: Apply software defaults."
   echo "  c: Clean install working directories and files."
-  echo "  a: Execute all of the above (in order defined)."
+  echo "  i: Install all of the above (in order listed)."
   echo "  q: Quit/Exit."
   echo ''
   read -p "Enter selection: " response
@@ -29,8 +30,11 @@ while true; do
     'b')
       scripts/basic.sh
       break;;
-    's')
-      scripts/software.sh
+    'h')
+      scripts/homebrew.sh
+      break;;
+    'a')
+      scripts/applications.sh
       break;;
     'd')
       scripts/defaults.sh
@@ -40,7 +44,8 @@ while true; do
       break;;
     'a')
       scripts/basic.sh
-      scripts/software.sh
+      scripts/homebrew.sh
+      scripts/applications.sh
       scripts/defaults.sh
       rm -rfv $WORK_PATH
       break;;

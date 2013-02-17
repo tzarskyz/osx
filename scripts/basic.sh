@@ -3,9 +3,6 @@
 # DESCRIPTION
 # Configures basic system settings.
 
-# USAGE
-# ./basic.sh
-
 # EXECUTION
 echo "Setting system label and name..."
 sudo scutil --set ComputerName $SYSTEM_LABEL

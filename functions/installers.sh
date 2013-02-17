@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # DESCRIPTION
-# Installs and configures OSX software.
+# Defines functions for installing and configuring software.
 
 # Verifies the install exists and completed successfully.
 # Parameters:

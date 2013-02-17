@@ -1,10 +1,7 @@
 #!/bin/sh
 
 # DESCRIPTION
-# Defines OSX setup script settings.
-
-# USAGE
-# ./settings.sh
+# Defines all script settings.
 
 # SETTINGS
 # General

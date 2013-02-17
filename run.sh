@@ -9,10 +9,10 @@
 # SETTINGS
 set -u # Exit if any variables are uninitialised.
 set -e # Exit if any command returns non-zero.
-. settings/settings.sh
+source settings/settings.sh
 
 # FUNCTIONS
-. functions/installers.sh
+source functions/installers.sh
 
 # EXECUTION
 read -p "Are the OSX software update, Xcode, etc. requirements complete? (y/n)?: " response

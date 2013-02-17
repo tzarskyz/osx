@@ -54,12 +54,17 @@ export -f download_installer
 # $1 = The remote URL.
 # $2 = The file name.
 function download_only {
-	echo "Downloading $1/$2..."
-	rm -rf $WORK_PATH
-	mkdir $WORK_PATH
-	cd $WORK_PATH
-	curl -LO "$1/$2"
-	mv $WORK_PATH/$2 $HOME/Downloads
+  app_path="$HOME/Downloads/$2"
+  if [ -e "$app_path" ]; then
+    echo "$app_path exists, skipping."
+  else
+    echo "Downloading $1/$2..."
+    rm -rf $WORK_PATH
+    mkdir $WORK_PATH
+    cd $WORK_PATH
+    curl -LO "$1/$2"
+    mv "$WORK_PATH/$2" "$HOME/Downloads"
+  fi
 }
 export -f download_only
 

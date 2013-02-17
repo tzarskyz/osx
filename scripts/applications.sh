@@ -56,12 +56,6 @@ install_zip_app "$EXPANDRIVE_APP_URL" "$EXPANDRIVE_APP_FILE" "$EXPANDRIVE_APP_NA
 # iStat Menus (the app is the installer)
 install_zip_app "$ISTATS_APP_URL" "$ISTATS_APP_FILE" "$ISTATS_APP_NAME"
 
-# Air Display
-install_zip_pkg "$AIR_DISPLAY_APP_URL" "$AIR_DISPLAY_APP_FILE" "$AIR_DISPLAY_APP_NAME"
-
-# Pastebot Sync (preference pane)
-download_only "$PASTEBOT_SYNC_APP_URL" "$PASTEBOT_SYNC_APP_FILE"
-
 # Bartender
 install_zip_app "$BARTENDER_APP_URL" "$BARTENDER_APP_FILE" "$BARTENDER_APP_NAME"
 
@@ -122,8 +116,14 @@ install_dmg_app "$SKYPE_APP_URL" "$SKYPE_APP_FILE" "Skype" "$SKYPE_APP_NAME"
 # VirtualBox
 install_dmg_pkg "$VIRTUAL_BOX_APP_URL" "$VIRTUAL_BOX_APP_FILE" "VirtualBox" "$VIRTUAL_BOX_APP_NAME"
 
-# Eye-Fi
-install_dmg_pkg "$EYEFI_APP_URL" "$EYEFI_APP_FILE" "Eye-Fi Installer" "$EYEFI_APP_NAME"
-
 # Doxie
 install_dmg_pkg "$DOXIE_APP_URL" "$DOXIE_APP_FILE" "Doxie" "$DOXIE_APP_NAME"
+
+# Pastebot Sync (preference pane)
+download_only "$PASTEBOT_SYNC_APP_URL" "$PASTEBOT_SYNC_APP_FILE"
+
+# Air Display
+download_only "$AIR_DISPLAY_APP_URL" "$AIR_DISPLAY_APP_FILE"
+
+# Eye-Fi
+download_only "$EYEFI_APP_URL" "$EYEFI_APP_FILE"

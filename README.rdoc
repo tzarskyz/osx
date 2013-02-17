@@ -45,8 +45,6 @@ This project contains shell scripts for setting up a new OSX environment.
   * OmniDazzle[http://www.omnigroup.com/products/omnidazzle]
   * ExpanDrive[http://www.expandrive.com]
   * {iStat Menus}[http://bjango.com/apps/istatmenus]
-  * {Air Display}[http://avatron.com/apps/air-display]
-  * {Pastebot Sync}[http://tapbots.com/software/pastebot/#sync]
   * Bartender[http://www.macbartender.com]
   * GitHub[http://mac.github.com]
   * Snippets[http://www.snippetsapp.com]
@@ -67,8 +65,10 @@ This project contains shell scripts for setting up a new OSX environment.
   * Colloquy[http://colloquy.info]
   * Skype[http://www.skype.com]
   * VirtualBox[https://www.virtualbox.org]
-  * {Eye-Fi}[http://www.eye.fi]  
   * Doxie[http://www.getdoxie.com]
+  * {Pastebot Sync}[http://tapbots.com/software/pastebot/#sync]
+  * {Air Display}[http://avatron.com/apps/air-display]
+  * {Eye-Fi}[http://www.eye.fi]  
 
 = Requirements
 

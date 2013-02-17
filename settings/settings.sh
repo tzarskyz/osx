@@ -81,13 +81,6 @@ export ISTATS_APP_URL=http://s3.amazonaws.com/bjango/files/istatmenus4
 export ISTATS_APP_FILE=istatmenus4.03.zip
 export ISTATS_APP_NAME="iStat Menus"
 
-export AIR_DISPLAY_APP_URL=http://avatron.com/downloads
-export AIR_DISPLAY_APP_FILE=AirDisplayInstaller.zip
-export AIR_DISPLAY_APP_NAME="Air Display"
-
-export PASTEBOT_SYNC_APP_URL=http://tapbots.net/pastebot
-export PASTEBOT_SYNC_APP_FILE=PastebotSAPP_ync.dmg
-
 export BARTENDER_APP_URL=http://www.macbartender.com/Demo
 export BARTENDER_APP_FILE=Bartender.zip
 export BARTENDER_APP_NAME=Bartender
@@ -168,10 +161,15 @@ export VIRTUAL_BOX_APP_URL=http://download.virtualbox.org/virtualbox/4.2.6
 export VIRTUAL_BOX_APP_FILE=VirtualBox-4.2.6-82870-OSX.dmg
 export VIRTUAL_BOX_APP_NAME=VirtualBox
 
-export EYEFI_APP_URL=http://support.eye.fi/agent/download/3.4.29
-export EYEFI_APP_FILE=Eye-Fi.dmg
-export EYEFI_APP_NAME="Eye-Fi Center"
-
 export DOXIE_APP_URL=http://www.getdoxie.com/resources/files
 export DOXIE_APP_FILE=Doxie.dmg
 export DOXIE_APP_NAME=Doxie
+
+export PASTEBOT_SYNC_APP_URL=http://tapbots.net/pastebot
+export PASTEBOT_SYNC_APP_FILE=PastebotSAPP_ync.dmg
+
+export AIR_DISPLAY_APP_URL=http://avatron.com/downloads
+export AIR_DISPLAY_APP_FILE=AirDisplayInstaller.zip
+
+export EYEFI_APP_URL=http://support.eye.fi/agent/download/3.4.29
+export EYEFI_APP_FILE=Eye-Fi.dmg

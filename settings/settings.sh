@@ -89,8 +89,8 @@ export PASTEBOT_SYNC_APP_URL=http://tapbots.net/pastebot
 export PASTEBOT_SYNC_APP_FILE=PastebotSAPP_ync.dmg
 
 export BARTENDER_APP_URL=http://www.macbartender.com/Demo
-export BARTENDER_SYNC_APP_FILE=Bartender.zip
-export BARTENDER_SYNC_APP_NAME=Bartender
+export BARTENDER_APP_FILE=Bartender.zip
+export BARTENDER_APP_NAME=Bartender
 
 export GITHUB_APP_URL=https://github-central.s3.amazonaws.com
 export GITHUB_APP_FILE=mac%2FGitHub%20for%20Mac%20107.zip

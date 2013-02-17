@@ -157,7 +157,7 @@ function install_zip_app {
   if [ -e "$app_path" ]; then
     echo "$app_path exists, skipping."
   else
-    download_installer $1 $2
+    download_installer "$1" "$2"
 
     echo "Preparing..."
     cd "$WORK_PATH"

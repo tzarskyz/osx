@@ -57,7 +57,7 @@ install_zip_app "$EXPANDRIVE_APP_URL" "$EXPANDRIVE_APP_FILE" "$EXPANDRIVE_APP_NA
 install_zip_app "$ISTATS_APP_URL" "$ISTATS_APP_FILE" "$ISTATS_APP_NAME"
 
 # Air Display
-install_dmg_pkg "$AIR_DISPLAY_APP_URL" "$AIR_DISPLAY_APP_FILE" "Air Display Installer" "$AIR_DISPLAY_APP_NAME"
+download_only "$AIR_DISPLAY_APP_URL" "$AIR_DISPLAY_APP_FILE" "$AIR_DISPLAY_APP_NAME"
 
 # Pastebot Sync (preference pane)
 download_only "$PASTEBOT_SYNC_APP_URL" "$PASTEBOT_SYNC_APP_FILE"

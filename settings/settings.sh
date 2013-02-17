@@ -82,7 +82,7 @@ export ISTATS_APP_FILE=istatmenus4.03.zip
 export ISTATS_APP_NAME="iStat Menus"
 
 export AIR_DISPLAY_APP_URL=http://avatron.com/downloads
-export AIR_DISPLAY_APP_FILE=AirDisplayInstaller.dmg
+export AIR_DISPLAY_APP_FILE=AirDisplayInstaller.zip
 export AIR_DISPLAY_APP_NAME="Air Display"
 
 export PASTEBOT_SYNC_APP_URL=http://tapbots.net/pastebot

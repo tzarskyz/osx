@@ -7,7 +7,6 @@
 # ./install.sh
 
 # SETTINGS
-set -u # Exit if any variables are uninitialised.
 set -e # Exit if any command returns non-zero.
 source settings/settings.sh
 
@@ -15,21 +14,38 @@ source settings/settings.sh
 source functions/installers.sh
 
 # EXECUTION
-read -p "Are the OSX software update, Xcode, etc. requirements complete? (y/n)?: " response
-if [ "$response" == 'y' ]; then
-  echo "Setting OSX basic settings..."
-  scripts/basic.sh
-
-  echo "Installing OSX software..."
-  scripts/software.sh
-
-  echo "Setting OSX defaults..."
-  scripts/defaults.sh
-
-  echo "Cleaning..."
-  rm -rf $WORK_PATH
-
-  echo "OSX setup complete!"
-else
-  echo "Whew, that was a close one. OSX setup aborted."
-fi
+echo ''
+while true; do
+  echo "Options:"
+  echo "  b: Apply basic machine settings."
+  echo "  s: Install software."
+  echo "  d: Apply software defaults."
+  echo "  c: Clean install working directories and files."
+  echo "  a: Execute all of the above (in order defined)."
+  echo "  q: Quit/Exit."
+  echo ''
+  read -p "Enter selection: " response
+  case $response in
+    'b')
+      scripts/basic.sh
+      break;;
+    's')
+      scripts/software.sh
+      break;;
+    'd')
+      scripts/defaults.sh
+      break;;
+    'c')
+      rm -rfv $WORK_PATH
+      break;;
+    'a')
+      scripts/basic.sh
+      scripts/software.sh
+      scripts/defaults.sh
+      rm -rfv $WORK_PATH
+      break;;
+    'q')
+      break;;
+  esac
+done
+echo ''

@@ -7,7 +7,6 @@
 # ./check.sh
 
 # SETTINGS
-set -u # Exit if any variables are uninitialised.
 set -e # Exit if any command returns non-zero.
 source settings/settings.sh
 

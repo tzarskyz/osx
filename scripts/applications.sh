@@ -24,7 +24,7 @@ sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /u
 install_dmg_app "$ALFRED_APP_URL" "$ALFRED_APP_FILE" "Alfred.app" "$ALFRED_APP_NAME"
 
 # TextExpander
-install_zip_app "$TEXTEXPANDER_APP_URL" "$TEXTEXPANDER_APP_FILE" "TextExpander.app" "$TEXTEXPANDER_APP_NAME"
+install_zip_app "$TEXTEXPANDER_APP_URL" "$TEXTEXPANDER_APP_FILE" "$TEXTEXPANDER_APP_NAME"
 
 # Path Finder
 install_dmg_app "$PATH_FINDER_APP_URL" "$PATH_FINDER_APP_FILE" "Path Finder" "$PATH_FINDER_APP_NAME"
@@ -54,7 +54,7 @@ install_dmg_app "$OMNIDAZZLE_APP_URL" "$OMNIDAZZLE_APP_FILE" "OmniDazzle" "$OMNI
 install_zip_app "$EXPANDRIVE_APP_URL" "$EXPANDRIVE_APP_FILE" "$EXPANDRIVE_APP_NAME"
 
 # iStat Menus (the app is the installer)
-download_only "$ISTATS_APP_URL" "$ISTATS_APP_FILE" "$ISTATS_APP_NAME"
+install_zip_app "$ISTATS_APP_URL" "$ISTATS_APP_FILE" "$ISTATS_APP_NAME"
 
 # Air Display
 install_dmg_pkg "$AIR_DISPLAY_APP_URL" "$AIR_DISPLAY_APP_FILE" "Air Display Installer" "$AIR_DISPLAY_APP_NAME"

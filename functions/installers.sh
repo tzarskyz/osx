@@ -17,6 +17,25 @@ function verify_install {
 }
 export -f verify_install
 
+function check_installs {
+  echo "\nChecking installs..."
+
+  # Acquire environment variables that only end with "APP_NAME".
+  app_names=`set | awk -F "=" '{print $1}' | grep ".*APP_NAME"`
+
+  # For each application name in app_names, check to see if the application is installed. Otherwise, skip.
+  for name in $app_names
+  do
+    app_path="$(eval echo \$$name)"
+    if [ ! -e "/Applications/$app_path.app" ]; then
+      echo " - Missing: $app_path"
+    fi
+  done
+
+  echo "Install check complete.\n"
+}
+export -f check_installs
+
 # Downloads an installer to local disk.
 # Parameters:
 # $1 = The remote URL.

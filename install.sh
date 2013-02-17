@@ -4,7 +4,7 @@
 # Executes all OSX setup scripts.
 
 # USAGE
-# ./run.sh
+# ./install.sh
 
 # SETTINGS
 set -u # Exit if any variables are uninitialised.

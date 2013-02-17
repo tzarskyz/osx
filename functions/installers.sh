@@ -17,6 +17,7 @@ function verify_install {
 }
 export -f verify_install
 
+# Checks for missing installs.
 function check_installs {
   echo "\nChecking installs..."
 

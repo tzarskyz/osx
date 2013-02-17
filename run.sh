@@ -9,9 +9,7 @@
 # SETTINGS
 set -u # Exit if any variables are uninitialised.
 set -e # Exit if any command returns non-zero.
-export SYSTEM_LABEL=RA # Placeholder for system display name.
-export SYSTEM_NAME=ra # Placeholder for system name.
-export WORK_PATH=/private/tmp/downloads # Temporary location for processing of file downloads and installers.
+. settings/settings.sh
 
 # FUNCTIONS
 . functions/installers.sh

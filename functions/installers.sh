@@ -54,9 +54,8 @@ export -f download_installer
 # $1 = The remote URL.
 # $2 = The file name.
 function download_only {
-  app_path="$HOME/Downloads/$2"
-  if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
+  if [ -e "$HOME/Downloads/$2" ]; then
+    echo "Downloaded: $2."
   else
     echo "Downloading $1/$2..."
     rm -rf $WORK_PATH
@@ -99,7 +98,7 @@ function install_dmg_app {
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
+    echo "Installed: $app_name."
   else
     download_installer $1 $2
     download_file="$WORK_PATH/$2"
@@ -130,7 +129,7 @@ function install_dmg_pkg {
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
+    echo "Installed: $app_name."
   else
     download_installer "$1" "$2"
     download_file="$WORK_PATH/$2"
@@ -160,7 +159,7 @@ function install_zip_app {
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
+    echo "Installed: $app_name."
   else
     download_installer "$1" "$2"
 
@@ -185,7 +184,7 @@ function install_tar_app {
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
+    echo "Installed: $app_name."
   else
     download_installer $1 $2
 
@@ -209,7 +208,7 @@ function install_zip_pkg {
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
+    echo "Installed: $app_name."
   else
     download_installer "$1" "$2"
     download_file="$WORK_PATH/$2"

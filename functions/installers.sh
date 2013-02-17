@@ -198,10 +198,9 @@ export -f install_tar_app
 # Parameters:
 # $1 = The remote URL.
 # $2 = The download file name.
-# $3 = The mount path.
-# $4 = The application name.
+# $3 = The application name.
 function install_zip_pkg {
-  app_name="$4.app"
+  app_name="$3.app"
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
@@ -210,9 +209,9 @@ function install_zip_pkg {
     download_installer "$1" "$2"
     download_file="$WORK_PATH/$2"
 
-    install_pkg "$WORK_PATH" "$4"
+    install_pkg "$WORK_PATH" "$3"
 
-    verify_install "$4"
+    verify_install "$3"
   fi
 }
-export -f install_dmg_pkg
+export -f install_zip_pkg

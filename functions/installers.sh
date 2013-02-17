@@ -69,7 +69,7 @@ export -f download_only
 # $2 = The application name.
 function install_app {
   echo "Installing /Applications/$2.app..."
-  cp -av "$1/$2.app" "/Applications"
+  cp -a "$1/$2.app" "/Applications"
 }
 export -f install_app
 
@@ -82,37 +82,6 @@ function install_pkg {
   find "$1" -type f -name "*.pkg" -o -name "*.mpkg" -exec sh -c 'sudo installer -pkg "$0" -target /' {} ';'
 }
 export -f install_pkg
-
-# Installs a package via a DMG file.
-# Parameters:
-# $1 = The remote URL.
-# $2 = The download file name.
-# $3 = The mount path.
-# $4 = The application name.
-function install_dmg_pkg {
-  app_name="$4.app"
-  app_path="/Applications/$app_name"
-
-  if [ -e "$app_path" ]; then
-    echo "$app_path exists, skipping."
-  else
-    download_installer $1 $2
-    download_file="$WORK_PATH/$2"
-
-    echo "Mounting..."
-    hdiutil attach "$download_file" -noidmereveal
-    mount_point="/Volumes/$3"
-
-    install_pkg "$mount_point" "$4"
-
-    echo "Cleaning..."
-    hdiutil detach -force "$mount_point"
-    rm -f $download_file
-
-    verify_install "$4"
-  fi
-}
-export -f install_dmg_pkg
 
 # Installs an application via a DMG file.
 # Parameters:
@@ -144,6 +113,37 @@ function install_dmg_app {
   fi
 }
 export -f install_dmg_app
+
+# Installs a package via a DMG file.
+# Parameters:
+# $1 = The remote URL.
+# $2 = The download file name.
+# $3 = The mount path.
+# $4 = The application name.
+function install_dmg_pkg {
+  app_name="$4.app"
+  app_path="/Applications/$app_name"
+
+  if [ -e "$app_path" ]; then
+    echo "$app_path exists, skipping."
+  else
+    download_installer "$1" "$2"
+    download_file="$WORK_PATH/$2"
+
+    echo "Mounting..."
+    hdiutil attach "$download_file" -noidmereveal
+    mount_point="/Volumes/$3"
+
+    install_pkg "$mount_point" "$4"
+
+    echo "Cleaning..."
+    hdiutil detach -force "$mount_point"
+    rm -f $download_file
+
+    verify_install "$4"
+  fi
+}
+export -f install_dmg_pkg
 
 # Installs an application via a zip file.
 # Parameters:
@@ -193,3 +193,26 @@ function install_tar_app {
   fi
 }
 export -f install_tar_app
+
+# Installs a package via a zip file.
+# Parameters:
+# $1 = The remote URL.
+# $2 = The download file name.
+# $3 = The mount path.
+# $4 = The application name.
+function install_zip_pkg {
+  app_name="$4.app"
+  app_path="/Applications/$app_name"
+
+  if [ -e "$app_path" ]; then
+    echo "$app_path exists, skipping."
+  else
+    download_installer "$1" "$2"
+    download_file="$WORK_PATH/$2"
+
+    install_pkg "$WORK_PATH" "$4"
+
+    verify_install "$4"
+  fi
+}
+export -f install_dmg_pkg

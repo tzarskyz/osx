@@ -21,7 +21,7 @@ while true; do
   echo "  h: Install Homebrew software."
   echo "  a: Install application software."
   echo "  d: Apply software defaults."
-  echo "  c: Clean install working directories and files."
+  echo "  c: Clean install working directory."
   echo "  i: Install all of the above (in order listed)."
   echo "  q: Quit/Exit."
   echo ''

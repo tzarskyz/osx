@@ -7,7 +7,7 @@
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
-# Bash Completion (http://bash-completion.alioth.debian.org)
+# Bash Completion
 brew install bash-completion
 
 # Git
@@ -16,13 +16,13 @@ brew install git
 # GitHub
 brew install hub
 
-# Pigz (http://www.zlib.net/pigz)
+# Pigz
 brew install pigz
 
-# JSON CLI Parser (http://stedolan.github.com/jq)
+# JSON CLI Parser
 brew install jq
 
-# Network Grep (http://ngrep.sourceforge.net)
+# Network Grep
 brew install ngrep
 
 # ImageMagick
@@ -69,7 +69,6 @@ curl get.pow.cx | sh
 # PostgreSQL
 brew install postgresql
 initdb /usr/local/var/postgres -E utf8
-
 cp /usr/local/Cellar/postgresql/*/homebrew.mxcl.postgresql.plist $HOME/Library/LaunchAgents
 launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 

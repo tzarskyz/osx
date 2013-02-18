@@ -3,24 +3,6 @@
 # DESCRIPTION
 # Defines functions for installing and configuring software.
 
-# Cleans work path for temporary processing of installs.
-function clean_work_path {
-  rm -rf "$WORK_PATH"
-}
-export -f clean_work_path
-
-# Verifies the install exists and completed successfully.
-# Parameters:
-# $1 = The application name.
-function verify_install {
-  application="/Applications/$1.app"
-  if [ ! -e "$application" ]; then
-    echo "ERROR: $application not found. Existing."
-    exit 1
-  fi
-}
-export -f verify_install
-
 # Checks for missing installs.
 function check_installs {
   echo "\nChecking installs..."
@@ -40,6 +22,25 @@ function check_installs {
   echo "Install check complete."
 }
 export -f check_installs
+
+# Cleans work path for temporary processing of installs.
+function clean_work_path {
+  echo "Cleaning: $WORK_PATH..."
+  rm -rf "$WORK_PATH"
+}
+export -f clean_work_path
+
+# Verifies the install exists and completed successfully.
+# Parameters:
+# $1 = The application name.
+function verify_install {
+  application="/Applications/$1.app"
+  if [ ! -e "$application" ]; then
+    echo "ERROR: $application not found. Existing."
+    exit 1
+  fi
+}
+export -f verify_install
 
 # Downloads an installer to local disk.
 # Parameters:
@@ -72,6 +73,24 @@ function download_only {
   fi
 }
 export -f download_only
+
+# Mounts a disk image.
+# Parameters:
+# $1 = The image path.
+function mount_image {
+  echo "Mounting image..."
+  hdiutil attach "$1" -noidmereveal
+}
+export -f mount_image
+
+# Unmounts a disk image.
+# Parameters:
+# $1 = The mount path.
+function unmount_image {
+  echo "Unmounting image..."
+  hdiutil detach -force "$1"
+}
+export -f unmount_image
 
 # Installs an application.
 # Parameters:
@@ -110,15 +129,10 @@ function install_dmg_app {
     download_installer $1 $2
     download_file="$WORK_PATH/$2"
 
-    echo "Mounting..."
-    hdiutil attach "$download_file" -noidmereveal
     mount_point="/Volumes/$3"
-
+    mount_image "$download_file"
     install_app "$mount_point" "$4"
-
-    echo "Cleaning..."
-    hdiutil detach -force "$mount_point"
-    rm -f $download_file
+    unmount_image "$mount_point"
 
     verify_install "$4"
   fi
@@ -141,15 +155,10 @@ function install_dmg_pkg {
     download_installer "$1" "$2"
     download_file="$WORK_PATH/$2"
 
-    echo "Mounting..."
-    hdiutil attach "$download_file" -noidmereveal
     mount_point="/Volumes/$3"
-
+    mount_image "$download_file"
     install_pkg "$mount_point" "$4"
-
-    echo "Cleaning..."
-    hdiutil detach -force "$mount_point"
-    rm -f $download_file
+    unmount_image "$mount_point"
 
     verify_install "$4"
   fi

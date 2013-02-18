@@ -40,14 +40,14 @@ while true; do
       scripts/defaults.sh
       break;;
     'c')
-      rm -rfv $WORK_PATH
+      clean_work_path
       break;;
     'a')
       scripts/basic.sh
       scripts/homebrew.sh
       scripts/applications.sh
       scripts/defaults.sh
-      rm -rfv $WORK_PATH
+      clean_work_path
       break;;
     'q')
       break;;

@@ -3,6 +3,11 @@
 # DESCRIPTION
 # Defines functions for installing and configuring software.
 
+# Cleans work path for temporary processing of installs.
+function clean_work_path {
+  rm -rf "$WORK_PATH"
+}
+
 # Verifies the install exists and completed successfully.
 # Parameters:
 # $1 = The application name.
@@ -41,7 +46,7 @@ export -f check_installs
 # $2 = The file name.
 function download_installer {
 	echo "Downloading $1/$2..."
-	rm -rf $WORK_PATH
+	clean_work_path
 	mkdir $WORK_PATH
 	cd $WORK_PATH
 	curl -LO "$1/$2"
@@ -58,7 +63,7 @@ function download_only {
     echo "Downloaded: $2."
   else
     echo "Downloading $1/$2..."
-    rm -rf $WORK_PATH
+    clean_work_path
     mkdir $WORK_PATH
     cd $WORK_PATH
     curl -LO "$1/$2"

@@ -22,7 +22,7 @@ while true; do
   echo "  a: Install application software."
   echo "  d: Apply software defaults."
   echo "  w: Clean work directory."
-  echo "  i: Perform complete install (i.e. basic settings, Homebrew, applications, defaults, and cleans work directory)."
+  echo "  i: Perform complete install (i.e. apply basic settings, Homebrew, applications, defaults, and clean work directory)."
   echo "  c: Check status of installed applications."
   echo "  q: Quit/Exit."
   echo ''

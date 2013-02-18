@@ -36,7 +36,7 @@ function check_installs {
     fi
   done
 
-  echo "Install check complete.\n"
+  echo "Install check complete."
 }
 export -f check_installs
 

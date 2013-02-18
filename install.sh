@@ -23,6 +23,7 @@ while true; do
   echo "  d: Apply software defaults."
   echo "  w: Clean work directory."
   echo "  i: Perform complete install (i.e. basic settings, Homebrew, applications, defaults, and cleans work directory)."
+  echo "  c: Check status of installed applications."
   echo "  q: Quit/Exit."
   echo ''
   read -p "Enter selection: " response
@@ -42,7 +43,7 @@ while true; do
     'w')
       clean_work_path
       break;;
-    'a')
+    'i')
       scripts/basic.sh
       scripts/homebrew.sh
       scripts/applications.sh

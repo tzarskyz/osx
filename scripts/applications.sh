@@ -119,7 +119,7 @@ install_dmg_app "$SKYPE_APP_URL" "$SKYPE_APP_FILE" "Skype" "$SKYPE_APP_NAME"
 install_dmg_pkg "$VIRTUAL_BOX_APP_URL" "$VIRTUAL_BOX_APP_FILE" "VirtualBox" "$VIRTUAL_BOX_APP_NAME"
 
 # Doxie
-install_dmg_pkg "$DOXIE_APP_URL" "$DOXIE_APP_FILE" "Doxie" "$DOXIE_APP_NAME"
+install_dmg_app "$DOXIE_APP_URL" "$DOXIE_APP_FILE" "Doxie" "$DOXIE_APP_NAME"
 
 # Pastebot Sync (preference pane)
 download_only "$PASTEBOT_SYNC_APP_URL" "$PASTEBOT_SYNC_APP_FILE"

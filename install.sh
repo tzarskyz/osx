@@ -21,8 +21,8 @@ while true; do
   echo "  h: Install Homebrew software."
   echo "  a: Install application software."
   echo "  d: Apply software defaults."
-  echo "  c: Clean install working directory."
-  echo "  i: Install all of the above (in order listed)."
+  echo "  w: Clean work directory."
+  echo "  i: Perform complete install (i.e. basic settings, Homebrew, applications, defaults, and cleans work directory)."
   echo "  q: Quit/Exit."
   echo ''
   read -p "Enter selection: " response
@@ -39,7 +39,7 @@ while true; do
     'd')
       scripts/defaults.sh
       break;;
-    'c')
+    'w')
       clean_work_path
       break;;
     'a')
@@ -48,6 +48,9 @@ while true; do
       scripts/applications.sh
       scripts/defaults.sh
       clean_work_path
+      break;;
+    'c')
+      check_installs
       break;;
     'q')
       break;;

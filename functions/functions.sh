@@ -14,7 +14,7 @@ function check_installs {
   for name in $app_names
   do
     app_path="$(eval echo \$$name)"
-    if [ ! -e "/Applications/$app_path.app" ]; then
+    if [ ! -e "/Applications/$app_path" ]; then
       echo " - Missing: $app_path"
     fi
   done
@@ -34,7 +34,7 @@ export -f clean_work_path
 # Parameters:
 # $1 = The application name.
 function verify_install {
-  application="/Applications/$1.app"
+  application="/Applications/$1"
   if [ ! -e "$application" ]; then
     echo "ERROR: $application not found. Existing."
     exit 1
@@ -97,8 +97,8 @@ export -f unmount_image
 # $1 = The application path.
 # $2 = The application name.
 function install_app {
-  echo "Installing /Applications/$2.app..."
-  cp -a "$1/$2.app" "/Applications"
+  echo "Installing /Applications/$2..."
+  cp -a "$1/$2" "/Applications"
 }
 export -f install_app
 
@@ -107,7 +107,7 @@ export -f install_app
 # $1 = The package path.
 # $2 = The application name.
 function install_pkg {
-  echo "Installing /Applications/$2.app..."
+  echo "Installing /Applications/$2..."
   package=$(sudo find "$1" -type f -name "*.pkg" -o -name "*.mpkg")
   sudo installer -pkg "$package" -target /
 }
@@ -120,7 +120,7 @@ export -f install_pkg
 # $3 = The mount path.
 # $4 = The application name.
 function install_dmg_app {
-  app_name="$4.app"
+  app_name="$4"
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
@@ -146,7 +146,7 @@ export -f install_dmg_app
 # $3 = The mount path.
 # $4 = The application name.
 function install_dmg_pkg {
-  app_name="$4.app"
+  app_name="$4"
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
@@ -171,7 +171,7 @@ export -f install_dmg_pkg
 # $2 = The download file name.
 # $3 = The application name.
 function install_zip_app {
-  app_name="$3.app"
+  app_name="$3"
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
@@ -196,7 +196,7 @@ export -f install_zip_app
 # $3 = The uncompress options.
 # $4 = The application name.
 function install_tar_app {
-  app_name="$4.app"
+  app_name="$4"
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then
@@ -220,7 +220,7 @@ export -f install_tar_app
 # $2 = The download file name.
 # $3 = The application name.
 function install_zip_pkg {
-  app_name="$3.app"
+  app_name="$3"
   app_path="/Applications/$app_name"
 
   if [ -e "$app_path" ]; then

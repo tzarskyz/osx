@@ -117,7 +117,7 @@ export IMAGE_OPTIM_APP_URL=http://imageoptim.com
 export IMAGE_OPTIM_APP_FILE=ImageOptim.tbz2
 export IMAGE_OPTIM_APP_NAME=ImageOptim
 
-export VLC_APP_URL=http://hivelocity.dl.sourceforge.net/project/vlc/2.0.5/macosx
+export VLC_APP_URL=http://iweb.dl.sourceforge.net/project/vlc/2.0.5/macosx
 export VLC_APP_FILE=vlc-2.0.5.dmg
 export VLC_APP_NAME=VLC
 

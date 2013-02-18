@@ -7,6 +7,7 @@
 function clean_work_path {
   rm -rf "$WORK_PATH"
 }
+export -f clean_work_path
 
 # Verifies the install exists and completed successfully.
 # Parameters:

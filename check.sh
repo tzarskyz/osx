@@ -11,7 +11,7 @@ set -e # Exit if any command returns non-zero.
 source settings/settings.sh
 
 # FUNCTIONS
-source functions/installers.sh
+source functions/functions.sh
 
 # EXECUTION
 check_installs

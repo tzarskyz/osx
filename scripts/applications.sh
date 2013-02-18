@@ -27,7 +27,7 @@ install_dmg_app "$ALFRED_APP_URL" "$ALFRED_APP_FILE" "Alfred.app" "$ALFRED_APP_N
 install_zip_app "$TEXTEXPANDER_APP_URL" "$TEXTEXPANDER_APP_FILE" "$TEXTEXPANDER_APP_NAME"
 
 # Path Finder
-install_dmg_app "$PATH_FINDER_APP_URL" "$PATH_FINDER_APP_FILE" "Path Finder" "$PATH_FINDER_APP_NAME"
+install_zip_app "$PATH_FINDER_APP_URL" "$PATH_FINDER_APP_FILE" "$PATH_FINDER_APP_NAME"
 
 # Firefox
 install_dmg_app "$FIREFOX_APP_URL" "$FIREFOX_APP_FILE" "Firefox" "$FIREFOX_APP_NAME"

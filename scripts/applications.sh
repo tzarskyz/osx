@@ -122,10 +122,10 @@ install_dmg_pkg "$VIRTUAL_BOX_APP_URL" "$VIRTUAL_BOX_APP_FILE" "VirtualBox" "$VI
 install_dmg_app "$DOXIE_APP_URL" "$DOXIE_APP_FILE" "Doxie" "$DOXIE_APP_NAME"
 
 # Pastebot Sync (preference pane)
-download_only "$PASTEBOT_SYNC_APP_URL" "$PASTEBOT_SYNC_APP_FILE"
+install_dmg_app "$PASTEBOT_SYNC_APP_URL" "$PASTEBOT_SYNC_APP_FILE" "Pastebot Sync" "$PASTEBOT_SYNC_APP_NAME"
 
-# Air Display
-download_only "$AIR_DISPLAY_APP_URL" "$AIR_DISPLAY_APP_FILE"
+# Air Display (preference pane)
+install_zip_pkg "$AIR_DISPLAY_APP_URL" "$AIR_DISPLAY_APP_FILE" "$AIR_DISPLAY_APP_NAME"
 
 # Eye-Fi
 download_only "$EYEFI_APP_URL" "$EYEFI_APP_FILE"

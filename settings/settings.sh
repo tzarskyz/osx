@@ -166,7 +166,7 @@ export DOXIE_APP_FILE=Doxie.dmg
 export DOXIE_APP_NAME=Doxie.app
 
 export PASTEBOT_SYNC_APP_URL=http://tapbots.net/pastebot
-export PASTEBOT_SYNC_APP_FILE=PastebotSAPP_ync.dmg
+export PASTEBOT_SYNC_APP_FILE=PastebotSync.dmg
 export PASTEBOT_SYNC_APP_NAME=PastebotSync.prefPane
 
 export AIR_DISPLAY_APP_URL=http://avatron.com/downloads

@@ -49,7 +49,7 @@ brew install rbenv
 brew install rbenv-gem-rehash
 brew install rbenv-default-gems
 brew install rbenv-vars
-cp ../settings/rbenv-vars.txt $HOME/.rbenv/vars
+cp settings/rbenv-vars.txt $HOME/.rbenv/vars
 brew install --HEAD ruby-build
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION

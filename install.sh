@@ -51,7 +51,7 @@ while true; do
       clean_work_path
       break;;
     'c')
-      check_installs
+      verify_installs
       break;;
     'q')
       break;;

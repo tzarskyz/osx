@@ -3,25 +3,45 @@
 # DESCRIPTION
 # Defines functions for installing and configuring software.
 
+# Verifies the install exists.
+# Parameters:
+# $1 = The file name.
+function verify_install {
+  file_name="$1" # Make the parameter easier to read.
+  file_extension="${file_name##*.}" # Store the extension (without the dot).
+
+  # Dynamically build the install path based on file extension type.
+  case $file_extension in
+    'app')
+      file_path="/Applications/$file_name";;
+    'prefPane')
+      file_path="/Library/PreferencePanes/$file_name";;
+  esac
+
+  # Display the missing install if not found.
+  if [ ! -e "$file_path" ]; then
+    echo " - Missing: $file_name"
+  fi
+}
+export -f verify_install
+
 # Checks for missing installs.
-function check_installs {
+function verify_installs {
   echo "\nChecking installs..."
 
-  # Acquire environment variables that only end with "APP_NAME".
-  app_names=`set | awk -F "=" '{print $1}' | grep ".*APP_NAME"`
+  # Only use environment variables that end with "APP_NAME".
+  file_names=`set | awk -F "=" '{print $1}' | grep ".*APP_NAME"`
 
-  # For each application name in app_names, check to see if the application is installed. Otherwise, skip.
-  for name in $app_names
+  # For each application name, check to see if the application is installed. Otherwise, skip.
+  for name in $file_names
   do
-    app_path="$(eval echo \$$name)"
-    if [ ! -e "/Applications/$app_path" ]; then
-      echo " - Missing: $app_path"
-    fi
+    # Evaluate/extract the key (name) value and pass it on for verfication.
+    verify_install "$(eval echo \$$name)"
   done
 
   echo "Install check complete."
 }
-export -f check_installs
+export -f verify_installs
 
 # Cleans work path for temporary processing of installs.
 function clean_work_path {
@@ -29,18 +49,6 @@ function clean_work_path {
   rm -rf "$WORK_PATH"
 }
 export -f clean_work_path
-
-# Verifies the install exists and completed successfully.
-# Parameters:
-# $1 = The application name.
-function verify_install {
-  application="/Applications/$1"
-  if [ ! -e "$application" ]; then
-    echo "ERROR: $application not found. Existing."
-    exit 1
-  fi
-}
-export -f verify_install
 
 # Downloads an installer to local disk.
 # Parameters:

@@ -167,9 +167,11 @@ export DOXIE_APP_NAME=Doxie.app
 
 export PASTEBOT_SYNC_APP_URL=http://tapbots.net/pastebot
 export PASTEBOT_SYNC_APP_FILE=PastebotSAPP_ync.dmg
+export PASTEBOT_SYNC_APP_NAME=PastebotSync.prefPane
 
 export AIR_DISPLAY_APP_URL=http://avatron.com/downloads
 export AIR_DISPLAY_APP_FILE=AirDisplayInstaller.zip
+export AIR_DISPLAY_APP_NAME="Air Display Preferences.prefPane"
 
 export EYEFI_APP_URL=http://support.eye.fi/agent/download/3.4.29
 export EYEFI_APP_FILE=Eye-Fi.dmg

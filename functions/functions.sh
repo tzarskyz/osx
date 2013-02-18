@@ -89,7 +89,8 @@ export -f install_app
 # $2 = The application name.
 function install_pkg {
   echo "Installing /Applications/$2.app..."
-  find "$1" -type f -name "*.pkg" -o -name "*.mpkg" -exec sh -c 'sudo installer -pkg "$0" -target /' {} ';'
+  package=$(sudo find "$1" -type f -name "*.pkg" -o -name "*.mpkg")
+  sudo installer -pkg "$package" -target /
 }
 export -f install_pkg
 
@@ -192,7 +193,7 @@ function install_tar_app {
   if [ -e "$app_path" ]; then
     echo "Installed: $app_name."
   else
-    download_installer $1 $2
+    download_installer "$1" "$2"
 
     echo "Preparing..."
     cd "$WORK_PATH"
@@ -217,10 +218,12 @@ function install_zip_pkg {
     echo "Installed: $app_name."
   else
     download_installer "$1" "$2"
-    download_file="$WORK_PATH/$2"
+
+    echo "Preparing..."
+    cd "$WORK_PATH"
+    unzip -q "$2"
 
     install_pkg "$WORK_PATH" "$3"
-
     verify_install "$3"
   fi
 }

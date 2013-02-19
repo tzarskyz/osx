@@ -148,7 +148,8 @@ The following is a checklist of additional steps worth completing after the scri
 
 = Resources
 
-* {Mathias Bynens' OSX Defaults}[https://github.com/mathiasbynens/dotfiles/blob/master/.osx]
+* Boxen[http://boxen.github.com] - GitHub's automated development setup.
+* {Mathias Bynens' OSX Defaults}[https://github.com/mathiasbynens/dotfiles/blob/master/.osx] - Default software settings automation.
 
 = Contributions
 

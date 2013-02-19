@@ -96,7 +96,7 @@ Master Version (unstable):
 
 Edit any of the *.sh files in the scripts folder to your liking and then open a terminal window and execute the following command:
 
-  ./run.sh
+  ./install.sh
 
 Reboot the machine after the script has completed. Feel free to delete the osx project directory as well.
 

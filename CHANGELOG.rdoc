@@ -1,3 +1,82 @@
+= vx.x.x
+
+* Fixed system label and name settings.
+* Fixed the Homebrew install.
+* Fixed the TextExpander install.
+* Fixed the Path Finder install.
+* Fixed the OpenOffice install.
+* Fixed the Doxie install.
+* Fixed permission issues with package installs and fixed the extracting of zip files for packakge install.
+* Upgraded to Ruby 1.9.3-p385.
+* Upgraded to Dropbox 1.6.16.
+* Upgraded to Knox 2.2.0.
+* Upgraded to iTerm2 1_0_0_20130122.
+* Upgraded to TextExpander 4.0.5.
+* Upgraded to Firefox 18.0.2.
+* Upgraded to Opera 12.14.
+* Upgraded to iStat Menus 4.03.
+* Upgraded to GitHub 107.
+* Upgraded to Snippets 1.4.1.
+* Upgraded to Espresso 2.0.5.
+* Upgraded to CodeKit 8248.
+* Upgraded to VLC 2.0.5.
+* Upgraded to PGAdmin 1.16.1.
+* Upgraded to Open Office 3.4.1.
+* Upgraded to VirtualBox 4.2.6-82870.
+* Upgraded to Billings 376.
+* Upgraded to Skype 6.2.0.1117.
+* Upgraded to Alfred 1.3.2_265.
+* Defaults - Enable keyboard access for all controls.
+* Defaults - Don’t show Dashboard as a Space.
+* Defaults - Hide the Time Machine and Volume icons by default.
+* Defaults - Save to disk (not iCloud) by default.
+* Defaults - Automatically quit printer app once the print jobs complete by default.
+* Defaults - Disable automatic termination of inactive apps by default.
+* Defaults - Applied better low light keyboard illumination defaults.
+* Defaults - Grouped all the finder defaults together.
+* Defaults - Show hidden files in Finder by default.
+* Defaults - Show status bar, full POSIX path, and list views in Finder by default.
+* Defaults - Grouped Dock options together and removed hot corner defaults.
+* Defaults - Grouped Safari defaults and improved default settings for debugging purposes.
+* Defaults - Enabled Address Book and iCal debug menus by default.
+* Defaults - Added TextEdit defaults.
+* Defaults - Cleaned up default setting groupings.
+* Defaults - Removed Battery and Clock from menu, show only Bluetooth and Airport instead.
+* Added the rbenv-gem-rehash Homebrew install.
+* Added the rbenv-default-gems Homebrew install.
+* Added the rbenv-vars Homebrew install.
+* Added the GitX install.
+* Added the Bartender install.
+* Added the Namebench install.
+* Added quiet option to unzip operations.
+* Added install options prompt.
+* Added file existence check to downloads.
+* Added the functions.sh script.
+* Added the clean_work_path function.
+* Added preference pane install support.
+* Added functions for getting install root, install path, and file extension.
+* Added verify_install function.
+* Added UTF8 support to PostgreSQL install.
+* Added Boxen to the README.
+* Updated the Ruby Gem Setup project install.
+* Replaced ~ with $HOME in scripts.
+* Moved all settings into a single file.
+* Renamed run.sh to install.sh.
+* Prefixed all *URL, *FILE, and *NAME variables with APP for better dynamic lookup.
+* Separated the Homebrew and application install scripts.
+* Quoted all install parameters to prevent issues with spaces.
+* Converted iStats Menus to an install instead of download only.
+* Cleaned up install and download messages for already installed/downloaded apps.
+* Renamed installers.sh to functions.sh.
+* Conditionally symbolic link Sublime Text 2 binary if it doesn't exist.
+* Refactored mounting/unmounting of disk images into separate functions.
+* Removed PostgreSQL version dependency.
+* Removed Redis version dependency.
+* Removed the brew update command from install actions.
+* Removed the ImageAlpha installer.
+* Removed Growl and Firefox (setup) from README.
+* Removed the GitBox mention from the README.
+
 = v0.4.0
 
 * Upgraded to Sublime Text 2.0.1.

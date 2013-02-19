@@ -23,7 +23,7 @@ if [ ! -e "/usr/bin/sublime" ]; then
 fi
 
 # Alfred
-install_dmg_app "$ALFRED_APP_URL" "$ALFRED_APP_FILE" "Alfred.app" "$ALFRED_APP_NAME"
+install_zip_app "$ALFRED_APP_URL" "$ALFRED_APP_FILE" "$ALFRED_APP_NAME"
 
 # TextExpander
 install_zip_app "$TEXTEXPANDER_APP_URL" "$TEXTEXPANDER_APP_FILE" "$TEXTEXPANDER_APP_NAME"

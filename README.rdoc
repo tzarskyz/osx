@@ -108,7 +108,6 @@ I also recommend installing the following software found via the {App Store}[htt
 * 1Password[http://agilewebsolutions.com/products/1Password]
 * Fantastical[http://flexibits.com/fantastical]
 * Cobook[http://www.cobookapp.com]
-* Growl[http://growl.info]
 * Cheatsheet[http://www.cheatsheetapp.com/CheatSheet]
 * 3Hub[http://3hubapp.com]
 * PDFpenPro[http://www.smilesoftware.com/PDFpenPro/index.html]
@@ -145,7 +144,6 @@ The following is a checklist of additional steps worth completing after the scri
 * Configure Address Book.
 * Configure iCal.
 * Configure iTunes.
-* Install {Firefox Extensions}[http://www.aeonscope.net/software/applications/firefox].
 * Configure previously installed applications.
 
 = Resources

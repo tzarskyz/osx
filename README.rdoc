@@ -14,16 +14,18 @@ This project contains shell scripts for setting up a new OSX environment.
   * Pigz[http://www.zlib.net/pigz]
   * jq[http://stedolan.github.com/jq]
   * {Network Grep}[http://ngrep.sourceforge.net]
-  * Node.js[http://nodejs.org]
-  * Phantom.js[http://phantomjs.org]
   * ImageMagick[http://www.imagemagick.org]
   * Graphviz[http://www.graphviz.org]
+  * Node.js[http://nodejs.org]
+  * Phantom.js[http://phantomjs.org]
+  * {Ruby Gems}[https://github.com/bkuhlmann/ruby_gem_setup]
   * rbenv[https://github.com/sstephenson/rbenv]
-  * rbenv-vars[https://github.com/sstephenson/rbenv-vars]
+  * rbenv-build[https://github.com/sstephenson/ruby-build]
   * rbenv-gem-rehash[https://github.com/sstephenson/rbenv-gem-rehash]
+  * rbenv-default-gems[https://github.com/sstephenson/rbenv-default-gems]
+  * rbenv-vars[https://github.com/sstephenson/rbenv-vars]
   * Ruby[http://www.ruby-lang.org]
   * Dotfiles[https://github.com/bkuhlmann/dotfiles]
-  * {Ruby Gems}[https://github.com/bkuhlmann/ruby_gem_setup]
   * Pow[http://pow.cx]
   * PostgreSQL[http://www.postgresql.org]
   * Redis[http://redis.io]
@@ -47,13 +49,13 @@ This project contains shell scripts for setting up a new OSX environment.
   * {iStat Menus}[http://bjango.com/apps/istatmenus]
   * Bartender[http://www.macbartender.com]
   * GitHub[http://mac.github.com]
+  * GitX[http://gitx.laullon.com]
   * Snippets[http://www.snippetsapp.com]
   * Espresso[http://macrabbit.com/espresso]
   * CodeKit[http://incident57.com/codekit]
   * Acorn[http://flyingmeat.com/acorn]
   * DoubleTake[http://echoone.com/doubletake]
   * ImageOptim[http://imageoptim.pornel.net]
-  * ImageAlpha[http://pornel.net/imagealpha]
   * VLC[http://www.videolan.org/vlc]
   * Induction[http://inductionapp.com]
   * pgAdmin[http://www.pgadmin.org/index.php]
@@ -98,7 +100,21 @@ Edit any of the *.sh files in the scripts folder to your liking and then open a 
 
   ./install.sh
 
-Reboot the machine after the script has completed. Feel free to delete the osx project directory as well.
+You will then be presented with the following options:
+
+  b: Apply basic machine settings.
+  h: Install Homebrew software.
+  a: Install application software.
+  d: Apply software defaults.
+  w: Clean work directory.
+  i: Perform complete install (i.e. apply basic settings, Homebrew, applications, defaults, and clean work directory).
+  c: Check status of installed applications.
+  q: Quit/Exit.
+
+By default, you'll want to choose option 'i' to run the complete install but you can choose to step through each install
+one-by-one or re-run a previous task.
+
+Reboot the machine after the install process has completed. Feel free to delete the osx project directory afterwards.
 
 = App Store Software
 

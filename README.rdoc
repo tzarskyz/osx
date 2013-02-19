@@ -74,7 +74,7 @@ This project contains shell scripts for setting up a new OSX environment.
 
 * OSX[http://www.apple.com/osx]
 * {OSX Software Updates}[http://www.apple.com/osx]
-* Xcode[https://developer.apple.com/downloads]
+* Xcode[https://developer.apple.com/downloads] (and that the license agreement is accepted)
 * {Command Line Tools for Xcode}[https://developer.apple.com/downloads]
 
 = Setup

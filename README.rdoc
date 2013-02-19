@@ -87,7 +87,7 @@ Current Version (stable):
 
   git clone git://github.com/bkuhlmann/osx.git
   cd osx
-  git checkout v0.4.0
+  git checkout v1.0.0
 
 Master Version (unstable):
 
@@ -111,7 +111,7 @@ You will then be presented with the following options:
   c: Check status of installed applications.
   q: Quit/Exit.
 
-By default, you'll want to choose option 'i' to run the complete install but you can choose to step through each install
+By default, you'll want to choose option 'i' to run the complete install but you can choose to step through each task
 one-by-one or re-run a previous task.
 
 Reboot the machine after the install process has completed. Feel free to delete the osx project directory afterwards.

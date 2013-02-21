@@ -9,10 +9,10 @@ export SYSTEM_LABEL=RA # Placeholder for system display name.
 export SYSTEM_NAME=ra # Placeholder for system name.
 export WORK_PATH=/private/tmp/downloads # Temporary location for processing of file downloads and installers.
 
-# Versions
+# Homebrew
 export RUBY_VERSION=1.9.3-p385
 
-# Software
+# Applications
 export CAFFEINE_APP_URL=http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine
 export CAFFEINE_APP_FILE=Caffeine1.1.1.zip
 export CAFFEINE_APP_NAME=Caffeine.app
@@ -34,7 +34,7 @@ export SUBLIME_TEXT_APP_FILE=Sublime%20Text%202.0.1.dmg
 export SUBLIME_TEXT_APP_NAME="Sublime Text 2.app"
 
 export ALFRED_APP_URL=http://cachefly.alfredapp.com
-export ALFRED_APP_FILE=alfred_1.3.2_265.zip
+export ALFRED_APP_FILE=alfred_1.3.3_267.zip
 export ALFRED_APP_NAME=Alfred.app
 
 export TEXTEXPANDER_APP_URL=http://cdn.smilesoftware.com

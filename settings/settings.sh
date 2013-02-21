@@ -45,8 +45,8 @@ export PATH_FINDER_APP_URL=http://get.cocoatech.com
 export PATH_FINDER_APP_FILE=PF6_LION.zip
 export PATH_FINDER_APP_NAME="Path Finder.app"
 
-export FIREFOX_APP_URL=http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/18.0.2/mac/en-US
-export FIREFOX_APP_FILE=Firefox%2018.0.2.dmg
+export FIREFOX_APP_URL=http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/19.0/mac/en-US
+export FIREFOX_APP_FILE=Firefox%2019.0.dmg
 export FIREFOX_APP_NAME=Firefox.app
 
 export CHROME_APP_URL=https://dl.google.com/chrome/mac/stable/GGRO

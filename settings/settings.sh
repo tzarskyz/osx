@@ -10,7 +10,7 @@ export SYSTEM_NAME=ra # Placeholder for system name.
 export WORK_PATH=/private/tmp/downloads # Temporary location for processing of file downloads and installers.
 
 # Homebrew
-export RUBY_VERSION=1.9.3-p385
+export RUBY_VERSION=1.9.3-p392
 
 # Applications
 export CAFFEINE_APP_URL=http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine

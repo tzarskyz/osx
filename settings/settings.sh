@@ -153,6 +153,10 @@ export COLLOQUY_APP_URL=http://colloquy.info/downloads
 export COLLOQUY_APP_FILE=colloquy-latest.zip
 export COLLOQUY_APP_NAME=Colloquy.app
 
+export WEDGE_APP_URL=http://wedge.natestedman.com/release
+export WEDGE_APP_FILE=Wedge.app.zip
+export WEDGE_APP_NAME=Wedge.app
+
 export SKYPE_APP_URL=http://download.skype.com/macosx
 export SKYPE_APP_FILE=Skype_6.2.0.1117.dmg
 export SKYPE_APP_NAME=Skype.app

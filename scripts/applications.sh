@@ -112,6 +112,9 @@ install_dmg_app "$OPEN_OFFICE_APP_URL" "$OPEN_OFFICE_APP_FILE" "OpenOffice.org" 
 # Colloquy
 install_zip_app "$COLLOQUY_APP_URL" "$COLLOQUY_APP_FILE" "$COLLOQUY_APP_NAME"
 
+# Wedge
+install_zip_app "$WEDGE_APP_URL" "$WEDGE_APP_FILE" "$WEDGE_APP_NAME"
+
 # Skype
 install_dmg_app "$SKYPE_APP_URL" "$SKYPE_APP_FILE" "Skype" "$SKYPE_APP_NAME"
 

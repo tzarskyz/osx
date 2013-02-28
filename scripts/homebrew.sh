@@ -22,6 +22,9 @@ brew install pigz
 # JSON CLI Parser
 brew install jq
 
+# The Silver Searcher
+brew install the_silver_searcher
+
 # Network Grep
 brew install ngrep
 

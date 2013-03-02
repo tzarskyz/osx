@@ -75,6 +75,13 @@ initdb /usr/local/var/postgres -E utf8
 cp /usr/local/Cellar/postgresql/*/homebrew.mxcl.postgresql.plist $HOME/Library/LaunchAgents
 launchctl load -w $HOME/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
+# MySQL
+brew install mysql
+ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+/usr/local/opt/mysql/bin/mysql_secure_installation
+
 # Redis
 brew install redis
 cp /usr/local/Cellar/redis/*/homebrew.mxcl.redis.plist $HOME/Library/LaunchAgents/

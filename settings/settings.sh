@@ -49,11 +49,11 @@ export FIREFOX_APP_URL=http://download.cdn.mozilla.net/pub/mozilla.org/firefox/r
 export FIREFOX_APP_FILE=Firefox%2019.0.dmg
 export FIREFOX_APP_NAME=Firefox.app
 
-export CHROME_APP_URL=https://dl.google.com/chrome/mac/stable/GGRO
+export CHROME_APP_URL=https://dl.google.com/chrome/mac/stable/GGRM
 export CHROME_APP_FILE=googlechrome.dmg
 export CHROME_APP_NAME="Google Chrome.app"
 
-export OPERA_APP_URL=http://get3.opera.com/pub/opera/mac/1214
+export OPERA_APP_URL=http://get.geo.opera.com/pub/opera/mac/1214
 export OPERA_APP_FILE=Opera_12.14_Setup_Intel.dmg
 export OPERA_APP_NAME=Opera.app
 

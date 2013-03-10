@@ -98,7 +98,7 @@ export ESPRESSO_APP_FILE=Espresso%202.0.5.zip
 export ESPRESSO_APP_NAME=Espresso.app
 
 export CODEKIT_APP_URL=http://incident57.com/codekit/files
-export CODEKIT_APP_FILE=codekit-8248.zip
+export CODEKIT_APP_FILE=codekit-8283.zip
 export CODEKIT_APP_NAME=CodeKit.app
 
 export ACORN_APP_URL=http://flyingmeat.com/download

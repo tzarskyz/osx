@@ -49,7 +49,6 @@ This project contains shell scripts for setting up a new OSX environment.
   * {iStat Menus}[http://bjango.com/apps/istatmenus]
   * Bartender[http://www.macbartender.com]
   * GitHub[http://mac.github.com]
-  * GitX[http://gitx.laullon.com]
   * Snippets[http://www.snippetsapp.com]
   * Espresso[http://macrabbit.com/espresso]
   * CodeKit[http://incident57.com/codekit]

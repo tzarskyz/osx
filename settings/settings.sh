@@ -89,10 +89,6 @@ export GITHUB_APP_URL=https://github-central.s3.amazonaws.com
 export GITHUB_APP_FILE=mac%2FGitHub%20for%20Mac%20107.zip
 export GITHUB_APP_NAME=GitHub.app
 
-export GITX_APP_URL=https://github.com/downloads/laullon/gitx
-export GITX_APP_FILE=GitX-L_v0.8.4.zip
-export GITX_APP_NAME=GitX.app
-
 export SNIPPETS_APP_URL=http://www.snippetsapp.com/download
 export SNIPPETS_APP_FILE=Snippets-1.4.1.zip
 export SNIPPETS_APP_NAME=Snippets.app

@@ -78,7 +78,7 @@ export EXPANDRIVE_APP_FILE=ExpanDrive.zip
 export EXPANDRIVE_APP_NAME=ExpanDrive.app
 
 export ISTATS_APP_URL=http://s3.amazonaws.com/bjango/files/istatmenus4
-export ISTATS_APP_FILE=istatmenus4.03.zip
+export ISTATS_APP_FILE=istatmenus4.04.zip
 export ISTATS_APP_NAME="iStat Menus.app"
 
 export BARTENDER_APP_URL=http://www.macbartender.com/Demo

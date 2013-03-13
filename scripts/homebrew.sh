@@ -56,7 +56,6 @@ brew install rbenv-vars
 cp settings/rbenv-vars.txt $HOME/.rbenv/vars
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
-rbenv rehash
 
 # Dotfiles
 git clone git://github.com/bkuhlmann/dotfiles.git

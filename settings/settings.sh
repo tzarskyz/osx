@@ -154,7 +154,7 @@ export WEDGE_APP_FILE=Wedge.app.zip
 export WEDGE_APP_NAME=Wedge.app
 
 export SKYPE_APP_URL=http://download.skype.com/macosx
-export SKYPE_APP_FILE=Skype_6.2.0.1117.dmg
+export SKYPE_APP_FILE=Skype_6.3.0.582.dmg
 export SKYPE_APP_NAME=Skype.app
 
 export VIRTUAL_BOX_APP_URL=http://download.virtualbox.org/virtualbox/4.2.6

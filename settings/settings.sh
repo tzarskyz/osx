@@ -34,8 +34,8 @@ export SUBLIME_TEXT_APP_FILE=Sublime%20Text%202.0.1.dmg
 export SUBLIME_TEXT_APP_NAME="Sublime Text 2.app"
 
 export ALFRED_APP_URL=http://cachefly.alfredapp.com
-export ALFRED_APP_FILE=alfred_1.3.3_267.zip
-export ALFRED_APP_NAME=Alfred.app
+export ALFRED_APP_FILE=Alfred_2.0_166.zip
+export ALFRED_APP_NAME="Alfred 2.app"
 
 export TEXTEXPANDER_APP_URL=http://cdn.smilesoftware.com
 export TEXTEXPANDER_APP_FILE=TextExpander_4.0.5.zip

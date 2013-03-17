@@ -1,6 +1,6 @@
 = Overview
 
-{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/bkuhlmann/osx]
+{<img src="https://codeclimate.com/github/bkuhlmann/osx.png" alt="Code Climate GPA" />}[https://codeclimate.com/github/bkuhlmann/osx]
 
 This project contains shell scripts for setting up a new OSX environment.
 

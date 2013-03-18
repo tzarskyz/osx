@@ -1,3 +1,22 @@
+= v1.1.0
+
+* Upgraded to Firefox 19.0.
+* Upgraded to Ruby 2.0.0-p0.
+* Upgraded to iStats Menus 4.04.
+* Upgraded to CodeKit 8283.
+* Upgraded to Dropbox 2.0.0.
+* Upgraded to Skype 6.3.0.582.
+* Upgraded to Alfred 2.0.
+* Updated the Google Chrome and Opera download URLs.
+* Added the Wedge installer.
+* Added the Silver Searcher Homebrew install.
+* Added the MySQL install.
+* Added GIF Brewery to the README.
+* Removed the GitX install.
+* Removed 'rbenv rehash' as part of the Ruby install.
+* Installs Redis before the DBs.
+* Added Twitter to the Apple App Store list.
+
 = v1.0.0
 
 * Fixed system label and name settings.

@@ -13,6 +13,7 @@ This project contains shell scripts for setting up a new OSX environment.
   * Hub[https://github.com/defunkt/hub]
   * Pigz[http://www.zlib.net/pigz]
   * jq[http://stedolan.github.com/jq]
+  * {The Silver Surfer}[https://github.com/ggreer/the_silver_searcher]
   * {Network Grep}[http://ngrep.sourceforge.net]
   * ImageMagick[http://www.imagemagick.org]
   * Graphviz[http://www.graphviz.org]
@@ -27,8 +28,9 @@ This project contains shell scripts for setting up a new OSX environment.
   * Ruby[http://www.ruby-lang.org]
   * Dotfiles[https://github.com/bkuhlmann/dotfiles]
   * Pow[http://pow.cx]
-  * PostgreSQL[http://www.postgresql.org]
   * Redis[http://redis.io]
+  * PostgreSQL[http://www.postgresql.org]
+  * MySQL[https://www.mysql.com]
 * Downloads and installs software packages generally not in the {App Store}[http://www.apple.com/macosx/whats-new/app-store.html]:
   * Caffeine[http://lightheadsw.com/caffeine]
   * Dropbox[https://www.dropbox.com]
@@ -64,6 +66,7 @@ This project contains shell scripts for setting up a new OSX environment.
   * {Delicious Library}[http://www.delicious-monster.com]
   * OpenOffice[http://www.openoffice.org]
   * Colloquy[http://colloquy.info]
+  * Wedge[http://wedge.natestedman.com]
   * Skype[http://www.skype.com]
   * VirtualBox[https://www.virtualbox.org]
   * Doxie[http://www.getdoxie.com]
@@ -86,7 +89,7 @@ Current Version (stable):
 
   git clone git://github.com/bkuhlmann/osx.git
   cd osx
-  git checkout v1.0.0
+  git checkout v1.1.0
 
 Master Version (unstable):
 

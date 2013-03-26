@@ -20,10 +20,11 @@ while true; do
   echo "  b: Apply basic machine settings."
   echo "  h: Install Homebrew software."
   echo "  a: Install application software."
+  echo "  x: Install application extensions (i.e. application enhancements, plug-ins, etc.)"
   echo "  d: Apply software defaults."
   echo "  w: Clean work directory."
-  echo "  i: Perform complete install (i.e. apply basic settings, Homebrew, applications, defaults, and clean work directory)."
-  echo "  c: Check status of installed applications."
+  echo "  i: Perform complete install (i.e. basic settings, Homebrew, applications, extensions, defaults, and work directory clean-up)."
+  echo "  c: Check status of installed applications and extensions."
   echo "  q: Quit/Exit."
   echo ''
   read -p "Enter selection: " response
@@ -37,6 +38,9 @@ while true; do
     'a')
       scripts/applications.sh
       break;;
+    'x')
+      scripts/extensions.sh
+      break;;
     'd')
       scripts/defaults.sh
       break;;
@@ -47,11 +51,13 @@ while true; do
       scripts/basic.sh
       scripts/homebrew.sh
       scripts/applications.sh
+      scripts/extensions.sh
       scripts/defaults.sh
       clean_work_path
       break;;
     'c')
       verify_installs
+      verify_extensions
       break;;
     'q')
       break;;

@@ -32,6 +32,11 @@ export ITERM_APP_NAME=iTerm.app
 export SUBLIME_TEXT_APP_URL=http://c758482.r82.cf2.rackcdn.com
 export SUBLIME_TEXT_APP_FILE=Sublime%20Text%202.0.1.dmg
 export SUBLIME_TEXT_APP_NAME="Sublime Text 2.app"
+export SUBLIME_TEXT_EXTENSION_ROOT="$HOME/Library/Application Support/Sublime Text 2/Packages"
+export EASY_MOTION_EXTENSION_URL="git://github.com/tednaleid/sublime-EasyMotion.git"
+export EASY_MOTION_EXTENSION_PATH="$SUBLIME_TEXT_EXTENSION_ROOT/EasyMotion"
+export GIT_GUTTER_EXTENSION_URL="git://github.com/jisaacks/GitGutter.git"
+export GIT_GUTTER_EXTENSION_PATH="$SUBLIME_TEXT_EXTENSION_ROOT/GitGutter"
 
 export ALFRED_APP_URL=http://cachefly.alfredapp.com
 export ALFRED_APP_FILE=Alfred_2.0_166.zip

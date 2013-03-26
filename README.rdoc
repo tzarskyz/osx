@@ -72,7 +72,10 @@ This project contains shell scripts for setting up a new OSX environment.
   * Doxie[http://www.getdoxie.com]
   * {Pastebot Sync}[http://tapbots.com/software/pastebot/#sync]
   * {Air Display}[http://avatron.com/apps/air-display]
-  * {Eye-Fi}[http://www.eye.fi]  
+  * {Eye-Fi}[http://www.eye.fi]
+* Downloads and installs software extensions:
+  * {Sublime Text 2 GitGutter}[https://github.com/jisaacks/GitGutter]
+  * {Sublime Text 2 EasyMotion}[https://github.com/tednaleid/sublime-EasyMotion]
 
 = Requirements
 

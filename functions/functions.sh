@@ -3,7 +3,15 @@
 # DESCRIPTION
 # Defines functions for installing and configuring software.
 
-# Answers the extension of a file.
+# Answers the file name.
+# Parameters:
+# $1 = The file path.
+function get_file_name {
+  echo "${1##*/}" # Answer file or directory name.
+}
+export -f get_file_name
+
+# Answers the file extension.
 # Parameters:
 # $1 = The file name.
 function get_file_extension {
@@ -18,7 +26,7 @@ function get_install_root {
   file_name="$1" # Make the parameter easier to read.
   file_extension=$(get_file_extension "$file_name")
 
-  # Dynamically build the install path based on file extension type.
+  # Dynamically build the install path based on file extension.
   case $file_extension in
     'app')
       install_path="/Applications";;
@@ -72,6 +80,37 @@ function verify_installs {
   echo "Install check complete."
 }
 export -f verify_installs
+
+# Verifies path exists.
+# Parameters:
+# $1 = The path.
+function verify_path {
+  path="$1" # Make the parameter easier to read.
+
+  # Display the missing path if not found.
+  if [ ! -e "$path" ]; then
+    echo " - Missing: $path"
+  fi
+}
+export -f verify_path
+
+# Checks for missing extensions.
+function verify_extensions {
+  echo "\nChecking extensions..."
+
+  # Only use environment variables that end with "EXTENSION_PATH".
+  extensions=`set | awk -F "=" '{print $1}' | grep ".*EXTENSION_PATH"`
+
+  # For each extension, check to see if the extension is installed. Otherwise, skip.
+  for extension in $extensions
+  do
+    # Evaluate/extract the key (extension) value and pass it on for verfication.
+    verify_path "$(eval echo \$$extension)"
+  done
+
+  echo "Extension check complete."
+}
+export -f verify_extensions
 
 # Cleans work path for temporary processing of installs.
 function clean_work_path {
@@ -284,3 +323,21 @@ function install_zip_pkg {
   fi
 }
 export -f install_zip_pkg
+
+# Installs application code from a Git repository.
+# Parameters:
+# $1 = The remote URL.
+# $2 = The install path.
+function install_git_app {
+  app_name=$(get_file_name "$2")
+  install_path="$2"
+
+  if [ -e "$install_path" ]; then
+    echo "Installed: $app_name."
+  else
+    echo "Installing into: $install_path..."
+    git clone --quiet "$1" "$install_path"
+    verify_path "$install_path"
+  fi
+}
+export -f install_git_app
